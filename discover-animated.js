@@ -1,0 +1,207 @@
+let gif;
+let gif2;
+let gif3;
+
+let frameNumber = 0;
+
+ function preload() {
+   gif = loadImage('assets/img/scopri/tod.gif');
+ }
+
+ function setup() {
+// FOOTER
+  const pageHeight = document.documentElement.scrollHeight;
+  console.log("pageHeight =" + pageHeight);
+
+  const footer = document.getElementById("footer");
+
+  let footerHeight = footer.height;
+
+  console.log("footer size =" + footerHeight);
+
+  // let footerPosition = pageHeight - footer.height;
+  // console.log("footerPosition =" + footerPosition);
+
+  select("#footer").position(windowWidth/10, pageHeight - 70)
+
+// 1ST GIF
+   var cnv1 = createCanvas(windowWidth, windowHeight)
+   cnv1.parent("first-section");
+   cnv1.style("position", "absolute")
+   cnv1.style("top", "10vh")
+   // cnv1.style("border-style", "solid")
+   cnv1.style("z-index", "-20")
+   cnv1.position(0, 0);
+
+   select("#first-section").mouseWheel(animateGif);
+   gif.setFrame(0);
+ }
+
+function draw() {
+background(color("white"));
+
+push()
+textSize(130)
+textAlign(CENTER)
+fill("#2c2cff");
+textLeading(130)
+let title = text("Un nuovo modo\ndi commemorare", windowWidth/2, (windowHeight/5)*2)
+pop()
+
+image(gif, 0, 0, windowWidth, windowHeight);
+  gif.pause();
+}
+
+function animateGif(event) {
+let maxFrame = gif.numFrames();
+
+let y = floor(constrain(event.deltaY, -1, 1));
+
+if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
+    frameNumber = frameNumber + y;
+    gif.play()
+    gif.setFrame(frameNumber);
+  }
+else {
+  gif.pause();
+  gif.setFrame(frameNumber);
+}
+
+// console.log("y=" + y)
+// console.log("frameNumber =" + frameNumber);
+}
+
+
+// 2ND GIF
+
+let sketch = function(s2) {
+
+s2.preload = function() {
+  gif2 = s2.loadImage('assets/img/scopri/core.gif');
+}
+
+s2.setup = function() {
+var cnv2 = s2.createCanvas(s2.windowWidth, s2.windowHeight)
+
+cnv2.parent("second-section")
+cnv2.style("position", "absolute")
+// cnv2.style("border-style", "solid")
+cnv2.style("z-index", "-20")
+cnv2.position(0, 0)
+s2.select("#second-section").mouseWheel(s2.animategif2);
+
+gif2.setFrame(0);
+  }
+
+s2.draw = function() {
+s2.background("white");
+
+// push()
+s2.fill("#2c2cff");
+s2.textSize(75)
+s2.textLeading(75)
+let title = s2.text("Tanti quanti il tuo\ncuore può contenere", 0, (s2.windowHeight/20)*8)
+// pop()
+
+// push()
+s2.fill(0);
+s2.textSize(28)
+s2.textLeading(29)
+let subtitle = s2.text("Ogni Core rappresenta una persona a cui tieni.\nL'indicatore luminoso ti comunicherà il momento\nideale per la commemorazione.", 0, (s2.windowHeight/20)*12)
+// pop()
+
+s2.image(gif2, s2.windowWidth/2 , 0, (s2.windowHeight/5)*3, s2.windowHeight);
+gif2.pause();
+}
+
+s2.animategif2 = function(event) {
+let maxFrame = gif2.numFrames();
+
+let y = floor(constrain(event.deltaY, -1, 1));
+
+if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
+    frameNumber = frameNumber + y;
+    gif2.play()
+    gif2.setFrame(frameNumber);
+  }
+else {
+  gif2.pause();
+  gif2.setFrame(frameNumber);
+}
+
+
+// console.log("y=" + y)
+// console.log("frameNumber =" + frameNumber);
+}
+
+}
+
+let s2 = new p5(sketch);
+
+
+// 3RD GIF
+
+let sketch2 = function(s3) {
+
+s3.preload = function() {
+  gif3 = s3.loadImage('assets/img/scopri/hub.gif');
+}
+
+s3.setup = function() {
+var cnv3 = s3.createCanvas(s3.windowWidth, s3.windowHeight)
+
+cnv3.parent("third-section")
+cnv3.style("position", "absolute")
+// cnv3.style("border-style", "solid")
+cnv3.style("z-index", "-20")
+cnv3.position(0, 0)
+s3.select("#third-section").mouseWheel(s3.animategif3);
+
+gif3.setFrame(0);
+}
+
+s3.draw = function() {
+
+let size = gif3.width * 0.5;
+
+s3.background("white");
+
+s3.fill("#2c2cff");
+s3.textSize(75)
+s3.textLeading(75)
+let title = s3.text("Uno per ogni casa", 0, (s3.windowHeight/20)*8)
+
+
+s3.fill(0);
+s3.textSize(28)
+s3.textLeading(29)
+let subtitle = s3.text("L'Hub è la sede per la commemorazione\nnella tua casa, un luogo di meditazione cui\nfar ritorno per ristabilire il contatto con un caro.", 0, (s3.windowHeight/20)*10)
+
+s3.scale(0.5)
+s3.image(gif3, s3.windowWidth - size/2, s3.windowHeight/4);
+
+gif3.pause();
+}
+
+s3.animategif3 = function(event) {
+let maxFrame = gif3.numFrames();
+
+let y = floor(constrain(event.deltaY, -1, 1));
+
+if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
+    frameNumber = frameNumber + y;
+    gif3.play()
+    gif3.setFrame(frameNumber);
+  }
+else {
+  gif3.pause();
+  gif3.setFrame(frameNumber);
+}
+
+// console.log("y=" + y)
+// console.log("frameNumber =" + frameNumber);
+}
+
+}
+
+let s3 = new p5(sketch2);
