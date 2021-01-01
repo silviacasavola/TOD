@@ -4,6 +4,8 @@ let gif3;
 
 let frameNumber = 0;
 
+
+
  function preload() {
    gif = loadImage('assets/img/scopri/tod.gif');
  }
