@@ -102,12 +102,10 @@ cursor: crosshair;
 /* FOOTER */
 #footer {
   position: absolute;
-  margin-bottom: var(--topmargin);
-  right: 10%;
+  right: var(--margin);
   font-size: 1vw;
   display: flex;
   z-index: 50;
-  padding-top: 5vh;
   /* border-style: solid; */
 }
 
@@ -115,6 +113,7 @@ cursor: crosshair;
   bottom: 0;
   position: absolute;
   line-height: 1.2rem;
+  padding-bottom: 4vh;
 }
 
 #foot1 {

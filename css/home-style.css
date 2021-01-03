@@ -4,12 +4,13 @@
 }
 
 body {
-  max-height: 3000px;
+  /* max-height: 3000px; */
+  /* max-height: 300vh; */
   /* position: relative; */
 }
 
 #logo:hover {
-    content: url('assets/img/header/logo-white.png');
+    content: url('../assets/img/header/logo-white.png');
 }
 
 /* CLAIM */
@@ -58,9 +59,8 @@ line-height: 1;
 .paragraph {
   position: relative;
   font-size: 2.7vw;
-  margin-bottom: 10vh;
   /* border-style: solid; */
-  /* color: black; */
+  padding-bottom: 20vh;
 }
 
 .paragraph-title {
@@ -68,12 +68,7 @@ line-height: 1;
   line-height: 2;
 }
 
-#perdita {
-  top: 100px;
-}
-
 #affetto {
-  padding-top: 100px;
 }
 
 /* FUOCO FATUO */
@@ -133,7 +128,3 @@ iframe {
   color: #F7F7F7;
   cursor: crosshair;
 }
-
-/* .footerlink:hover {
-  color: #F7F7F7;
-} */

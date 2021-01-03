@@ -20,7 +20,7 @@
 /* HEADER */
 
 #logo:hover {
-    content: url('assets/img/header/logo-blue.png');
+    content: url('../assets/img/header/logo-blue.png');
 }
 
 .headerbtn:hover {
