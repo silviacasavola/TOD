@@ -148,7 +148,7 @@
 
 .row {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 2vh;
   height: 30vh;
   /* border-style: solid; */
 }
@@ -163,7 +163,6 @@
   position: absolute;
   /* border:solid; */
   display: inline-block;
-  top: 10vh;
   width:20vw;
 }
 
@@ -171,7 +170,6 @@
   font-size: 1vw;
   line-height: 1.5vw;
   font-weight: 400;
-
 }
 
 
@@ -310,7 +308,7 @@ position: absolute;
 }
 
 #containerbigdx{
-  right: 7vw;
+  right: 6vw;
   width: 20%;
   /* border: solid; */
   position: absolute;

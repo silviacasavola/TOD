@@ -12,19 +12,16 @@ let frameNumber = 0;
 
  function setup() {
 // FOOTER
-  const pageHeight = document.documentElement.scrollHeight;
-  console.log("pageHeight =" + pageHeight);
+const pageHeight = document.documentElement.scrollHeight;
+console.log("pageHeight =" + pageHeight);
 
-  const footer = document.getElementById("footer");
+let footer = select("#footer");
+let footerHeight = footer.height;
 
-  let footerHeight = footer.height;
+console.log("footer size =" + footerHeight);
 
-  console.log("footer size =" + footerHeight);
+select("#footer").position(windowWidth/10, pageHeight - footerHeight)
 
-  // let footerPosition = pageHeight - footer.height;
-  // console.log("footerPosition =" + footerPosition);
-
-  select("#footer").position(windowWidth/10, pageHeight - 70)
 
 // 1ST GIF
    var cnv1 = createCanvas(windowWidth, windowHeight)

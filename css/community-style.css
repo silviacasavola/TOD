@@ -27,11 +27,9 @@
 #title {
   position: fixed;
   left: var(--margin);
-  right: var(--margin);
   top: 50vh;
   transform:translate(-1%, -60%);
-  padding: 0px 0px 0px 10px;
-  font-size: 15vw;
+  font-size: 15.4vw;
   z-index: +10;
   color: #2c2cff;
   /* border-style: solid; */
@@ -40,7 +38,7 @@
 /* SUBTITLE */
 #subtitle {
   position: fixed;
-  font-size: 1.9vw;
+  font-size: 2vw;
   top: 50%;
   transform:translate(0%, -50%);
   height: 45vh;
@@ -148,7 +146,7 @@ a:hover {
   position: absolute;
   left: var(--margin);
   right: var(--margin);
-  height: 600vh;
+  /* height: 600vh; */
   /* border-style: solid; */
 }
 
@@ -156,7 +154,7 @@ a:hover {
 #stories {
   top: 100vh;
   padding-top: 7.3vh;
-  height: 260vh;
+  height: 270vh;
   /* border: solid; */
 }
 
@@ -223,13 +221,13 @@ right: var(--margin);
 }
 
 .id-city, .id-age {
-  font-size: 16px;
+  font-size: 1vw;
   line-height: 1.8rem;
 }
 
 .id-name {
-  font-size: 32px;
-  line-height: 1.8rem;
+  font-size: 2vw;
+  line-height: 1.7rem;
 }
 
 .image {
@@ -257,7 +255,7 @@ right: var(--margin);
 }
 
 .text {
-  font-size: 30px;
+  font-size: 1.7vw;
   font-family: "Whyte", sans-serif;
   position: absolute;
   bottom: 0;
@@ -311,10 +309,13 @@ right: var(--margin);
 margin-left: var(--width1);
 }
 
+
+
+
 /* 2. COVID SECTION */
 #covid {
   top: 400vh;
-  height: 310vh;
+  height: 330vh;
   z-index: 0;
   /* border: solid; */
 }
@@ -339,7 +340,7 @@ width: 38rem;
 .section-title {
   position: relative;
   padding-bottom: 5vh;
-  font-size: 80px;
+  font-size: 5vw;
   font-weight: 450;
   color: #2c2cff;
   /* border-style: solid; */
@@ -347,18 +348,18 @@ width: 38rem;
 
 .section-subtitle {
   position: relative;
-  font-size: 24px;
+  font-size: 1.7vw;
   line-height: 1.2;
 }
 
 /*3. MESSAGES SECTION*/
 #messages {
 position: absolute;
-  top: 740vh;
-  z-index: 10;
-  height: 1500px;
-  padding-bottom: 50vh;
-  /* border-style: solid; */
+top: 760vh;
+z-index: 10;
+height: 180vh;
+padding-bottom: 50vh;
+/* border-style: solid; */
 }
 
 #messages-heading {
@@ -391,7 +392,7 @@ padding-bottom: 16vh;
   background-color: #2c2cff;
   padding: 20px 20px 10px 20px;
   font-size: 14px;
-  height: 40vh;
+  height: 20vw;
 }
 
 label {
@@ -460,7 +461,7 @@ display: none;
   background-color: white;
   display: inline-block;
   width: 20vw;
-  height: 40vh;
+  height: 20vw;
   color: white;
   border: none;
   color: #2c2cff;
