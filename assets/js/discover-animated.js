@@ -1,4 +1,3 @@
-let gif;
 let gif2;
 let gif3;
 
@@ -7,7 +6,7 @@ let frameNumber = 0;
 
 
  function preload() {
-   gif = loadImage('../img/scopri/tod.gif');
+   gif = loadImage('assets/img/scopri/tod.gif');
  }
 
  function setup() {
@@ -33,6 +32,7 @@ select("#footer").position(windowWidth/10, pageHeight - footerHeight)
    cnv1.position(0, 0);
 
    select("#first-section").mouseWheel(animateGif);
+   // PUò DARE PROBLEMI! LA PROSSIMA
    gif.setFrame(0);
  }
 
@@ -60,12 +60,14 @@ if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
     frameNumber = frameNumber + y;
     gif.play()
     gif.setFrame(frameNumber);
+
   }
 else {
   gif.pause();
   gif.setFrame(frameNumber);
 }
 
+console.log("frame gif 1=" + gif.getCurrentFrame());
 // console.log("y=" + y)
 // console.log("frameNumber =" + frameNumber);
 }
@@ -76,7 +78,7 @@ else {
 let sketch = function(s2) {
 
 s2.preload = function() {
-  gif2 = s2.loadImage('../img/scopri/core.gif');
+  gif2 = s2.loadImage('assets/img/scopri/core.gif');
 }
 
 s2.setup = function() {
@@ -89,7 +91,8 @@ cnv2.style("z-index", "-20")
 cnv2.position(0, 0)
 s2.select("#second-section").mouseWheel(s2.animategif2);
 
-gif2.setFrame(0);
+// dà problemi
+// gif2.s2.setFrame(0);
   }
 
 s2.draw = function() {
@@ -129,6 +132,7 @@ else {
 }
 
 
+console.log("frame gif 2=" + gif2.getCurrentFrame());
 // console.log("y=" + y)
 // console.log("frameNumber =" + frameNumber);
 }
@@ -143,7 +147,7 @@ let s2 = new p5(sketch);
 let sketch2 = function(s3) {
 
 s3.preload = function() {
-  gif3 = s3.loadImage('../img/scopri/hub.gif');
+  gif3 = s3.loadImage('assets/img/scopri/hub.gif');
 }
 
 s3.setup = function() {
@@ -156,6 +160,7 @@ cnv3.style("z-index", "-20")
 cnv3.position(0, 0)
 s3.select("#third-section").mouseWheel(s3.animategif3);
 
+// dà problemi
 gif3.setFrame(0);
 }
 
@@ -197,6 +202,7 @@ else {
   gif3.setFrame(frameNumber);
 }
 
+console.log("frame gif 3=" + gif3.getCurrentFrame());
 // console.log("y=" + y)
 // console.log("frameNumber =" + frameNumber);
 }
