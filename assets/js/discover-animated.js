@@ -13,20 +13,13 @@ let frameNumber3 = 0;
  }
 
  function setup() {
-// FOOTER
+// PLACES THE FOOTER AT THE BOTTOM
   const pageHeight = document.documentElement.scrollHeight;
-  console.log("pageHeight =" + pageHeight);
+  // console.log("pageHeight =" + pageHeight);
 
   const footer = document.getElementById("footer");
 
-  let footerHeight = footer.height;
-
-  console.log("footer size =" + footerHeight);
-
-  // let footerPosition = pageHeight - footer.height;
-  // console.log("footerPosition =" + footerPosition);
-
-  select("#footer").position(windowWidth/10, pageHeight - 70)
+  select("#footer").position(windowWidth/10, pageHeight)
 
 // 1ST GIF
    var cnv1 = createCanvas(windowWidth, windowHeight)
@@ -70,9 +63,6 @@ else {
   gif.pause();
   gif.setFrame(frameNumber);
 }
-
-// console.log("y=" + y)
-// console.log("frameNumber =" + frameNumber);
 }
 
 
@@ -132,10 +122,6 @@ else {
   gif2.pause();
   gif2.setFrame(frameNumber2);
 }
-
-
-// console.log("y=" + y)
-// console.log("frameNumber =" + frameNumber);
 }
 
 }
@@ -201,9 +187,6 @@ else {
   gif3.pause();
   gif3.setFrame(frameNumber3);
 }
-
-// console.log("y=" + y)
-// console.log("frameNumber3 =" + frameNumber3);
 }
 
 }
