@@ -1,7 +1,10 @@
+let gif;
 let gif2;
 let gif3;
 
 let frameNumber = 0;
+let frameNumber2 = 0;
+let frameNumber3 = 0;
 
 
 
@@ -11,16 +14,19 @@ let frameNumber = 0;
 
  function setup() {
 // FOOTER
-const pageHeight = document.documentElement.scrollHeight;
-console.log("pageHeight =" + pageHeight);
+  const pageHeight = document.documentElement.scrollHeight;
+  console.log("pageHeight =" + pageHeight);
 
-let footer = select("#footer");
-let footerHeight = footer.height;
+  const footer = document.getElementById("footer");
 
-console.log("footer size =" + footerHeight);
+  let footerHeight = footer.height;
 
-select("#footer").position(windowWidth/10, pageHeight - footerHeight)
+  console.log("footer size =" + footerHeight);
 
+  // let footerPosition = pageHeight - footer.height;
+  // console.log("footerPosition =" + footerPosition);
+
+  select("#footer").position(windowWidth/10, pageHeight - 70)
 
 // 1ST GIF
    var cnv1 = createCanvas(windowWidth, windowHeight)
@@ -32,7 +38,6 @@ select("#footer").position(windowWidth/10, pageHeight - footerHeight)
    cnv1.position(0, 0);
 
    select("#first-section").mouseWheel(animateGif);
-   // PUò DARE PROBLEMI! LA PROSSIMA
    gif.setFrame(0);
  }
 
@@ -60,14 +65,12 @@ if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
     frameNumber = frameNumber + y;
     gif.play()
     gif.setFrame(frameNumber);
-
   }
 else {
   gif.pause();
   gif.setFrame(frameNumber);
 }
 
-console.log("frame gif 1=" + gif.getCurrentFrame());
 // console.log("y=" + y)
 // console.log("frameNumber =" + frameNumber);
 }
@@ -91,8 +94,7 @@ cnv2.style("z-index", "-20")
 cnv2.position(0, 0)
 s2.select("#second-section").mouseWheel(s2.animategif2);
 
-// dà problemi
-// gif2.s2.setFrame(0);
+gif2.setFrame(0);
   }
 
 s2.draw = function() {
@@ -121,18 +123,17 @@ let maxFrame = gif2.numFrames();
 
 let y = floor(constrain(event.deltaY, -1, 1));
 
-if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
-    frameNumber = frameNumber + y;
+if (y>0 && frameNumber2 < maxFrame || y<0 && frameNumber2 > 0) {
+    frameNumber2 = frameNumber2 + y;
     gif2.play()
-    gif2.setFrame(frameNumber);
+    gif2.setFrame(frameNumber2);
   }
 else {
   gif2.pause();
-  gif2.setFrame(frameNumber);
+  gif2.setFrame(frameNumber2);
 }
 
 
-console.log("frame gif 2=" + gif2.getCurrentFrame());
 // console.log("y=" + y)
 // console.log("frameNumber =" + frameNumber);
 }
@@ -160,7 +161,6 @@ cnv3.style("z-index", "-20")
 cnv3.position(0, 0)
 s3.select("#third-section").mouseWheel(s3.animategif3);
 
-// dà problemi
 gif3.setFrame(0);
 }
 
@@ -192,19 +192,18 @@ let maxFrame = gif3.numFrames();
 
 let y = floor(constrain(event.deltaY, -1, 1));
 
-if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
-    frameNumber = frameNumber + y;
+if (y>0 && frameNumber3 < maxFrame || y<0 && frameNumber3 > 0) {
+    frameNumber3 = frameNumber3 + y;
     gif3.play()
-    gif3.setFrame(frameNumber);
+    gif3.setFrame(frameNumber3);
   }
 else {
   gif3.pause();
-  gif3.setFrame(frameNumber);
+  gif3.setFrame(frameNumber3);
 }
 
-console.log("frame gif 3=" + gif3.getCurrentFrame());
 // console.log("y=" + y)
-// console.log("frameNumber =" + frameNumber);
+// console.log("frameNumber3 =" + frameNumber3);
 }
 
 }
