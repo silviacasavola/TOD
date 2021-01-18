@@ -1,15 +1,13 @@
 function setup() {
+// PLACES THE FOOTER AT THE BOTTOM
+ const pageHeight = document.documentElement.scrollHeight;
+ // console.log("pageHeight =" + pageHeight);
+
+ const footer = document.getElementById("footer");
+
+ select("#footer").position(0, pageHeight)
+ 
   cnv = createCanvas(0, 0);
-
-  const pageHeight = document.documentElement.scrollHeight;
-  console.log("pageHeight =" + pageHeight);
-
-  let footer = select("#footer");
-  let footerHeight = footer.height;
-
-  console.log("footer size =" + footerHeight);
-
-  select("#footer").position(windowWidth/10, pageHeight - footerHeight)
 }
 
 function draw() {

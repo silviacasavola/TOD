@@ -19,7 +19,8 @@ let frameNumber3 = 0;
 
   const footer = document.getElementById("footer");
 
-  select("#footer").position(windowWidth/10, pageHeight)
+  select("#footer").position(0, pageHeight)
+
 
 // 1ST GIF
    var cnv1 = createCanvas(windowWidth, windowHeight)

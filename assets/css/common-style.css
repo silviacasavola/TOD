@@ -117,12 +117,12 @@ cursor: crosshair;
 }
 
 #foot1 {
-  left: 0;
+  left: var(--margin);
 }
 
 #foot2 {
   left: 33%;
-  transform: translate(-50%, 0);
+  /* transform: translate(+50%, 0); */
 }
 
 #foot3 {
