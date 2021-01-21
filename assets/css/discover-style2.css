@@ -33,14 +33,15 @@
 .section {
   position: fixed;
   height: 100vh;
+  text-align: center;
   /* border: solid; */
 }
 
 .section-heading {
+  margin-top: 8vh;
   position: relative;
-  font-size: 5vw;
-  line-height: 1;
-  padding: 5vh 0vh 5vh 0vh;
+  font-size: 75px;
+  padding: 30px 0px 30px 0px;
   color: #2c2cff;
   /* font-weight: 500; */
   /* border: solid; */
@@ -48,12 +49,12 @@
 
 .paragraph {
   position: relative;
-  font-size: 1.7vw;
+  font-size: 28px;
   line-height: 1.1;
   bottom: 0;
 }
 
-#first-section, #third-section {
+#first-section {
   width: 100vw;
 }
 
@@ -99,28 +100,13 @@
   background-color: white;
 }
 
-#third-section {
-  margin-left: var(--margin);
-}
-
-#second-section, #fourth-section, #fifth-section {
+#second-section, #third-section, #fourth-section, #fifth-section {
   left: var(--margin);
   right: var(--margin);
 }
 
-#content2, #content3 {
-  position: absolute;
-  top: 50vh;
-  transform:translate(0%, -50%);
-}
-
 #section4-heading {
-  text-align: center;
   padding-top: 6vh;
-}
-
-#paragraph4 {
-  text-align: center;
 }
 
 #grafico-container {
