@@ -40,7 +40,8 @@
   position: relative;
   font-size: 5vw;
   line-height: 1;
-  padding: 5vh 0vh 5vh 0vh;
+  /* padding: 5vh 0vh 5vh 0vh; */
+  padding-bottom: 5vh;
   color: #2c2cff;
   /* font-weight: 500; */
   /* border: solid; */
@@ -116,7 +117,7 @@
 
 #section4-heading {
   text-align: center;
-  padding-top: 6vh;
+  padding-top: 12vh;
 }
 
 #paragraph4 {
