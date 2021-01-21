@@ -28,7 +28,7 @@ let frameNumber3 = 0;
    cnv1.style("position", "absolute")
    cnv1.style("top", "10vh")
    // cnv1.style("border-style", "solid")
-   cnv1.style("z-index", "-20")
+   cnv1.style("z-index", "20")
    cnv1.position(0, 0);
 
    select("#first-section").mouseWheel(animateGif);
@@ -36,15 +36,7 @@ let frameNumber3 = 0;
  }
 
 function draw() {
-background(color("white"));
-
-push()
-textSize(130)
-textAlign(CENTER)
-fill("#2c2cff");
-textLeading(130)
-let title = text("Un nuovo modo\ndi commemorare", windowWidth/2, (windowHeight/5)*2)
-pop()
+clear();
 
 image(gif, 0, 0, windowWidth, windowHeight);
   gif.pause();
@@ -89,7 +81,7 @@ gif2.setFrame(0);
   }
 
 s2.draw = function() {
-s2.background("white");
+s2.clear();
 
 // push()
 s2.fill("#2c2cff");
@@ -155,7 +147,7 @@ s3.draw = function() {
 
 let size = gif3.width * 0.5;
 
-s3.background("white");
+s3.clear();
 
 s3.fill("#2c2cff");
 s3.textSize(75)

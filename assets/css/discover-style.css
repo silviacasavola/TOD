@@ -28,42 +28,6 @@
   cursor: crosshair;
 }
 
-#title {
-  position: relative;
-  margin: auto;
-  /* top: 150px; */
-  /* font-size: 130px; */
-  color: #2c2cff;
-  text-align: center;
-  /* border-style: solid; */
-}
-
-/* SUBTITLE */
-#subtitle-container {
-  position: relative;
-  margin: auto;
-  font-size: 28px;
-  height: 100%;
-  width: 100%;
-  z-index: -10;
-  top: 65vh;
-  /* border-style: solid; */
-  }
-
-#subtitle-text {
-  position: relative;
-  left: 0;
-  line-height: 30px;
-  text-align: center;
-  /* border-style: solid; */
-  }
-
-#subtitle-transition {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  background-color: white;
-}
 
 /* SECTIONS */
 .section {
@@ -92,6 +56,48 @@
 
 #first-section {
   width: 100vw;
+}
+
+/* TITLE */
+#title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50vh;
+  transform:translate(0%, -65%);
+  font-size: 10.5vw;
+  z-index: 0;
+  color: #2c2cff;
+  pointer-events: none;
+  line-height: 0.9;
+  /* border-style: solid; */
+}
+
+/* SUBTITLE */
+#subtitle-container {
+  position: relative;
+  margin: auto;
+  font-size: 28px;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  top: 68vh;
+  /* border-style: solid; */
+  }
+
+#subtitle-text {
+  position: relative;
+  left: 0;
+  line-height: 30px;
+  text-align: center;
+  /* border-style: solid; */
+  }
+
+#subtitle-transition {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: white;
 }
 
 #second-section, #third-section, #fourth-section, #fifth-section {

@@ -117,7 +117,7 @@ cursor: crosshair;
 }
 
 #foot1 {
-  left: var(--margin);
+  left: 0;
 }
 
 #foot2 {
