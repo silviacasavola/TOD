@@ -330,13 +330,9 @@ margin-left: var(--width1);
 }
 
 #covid-heading {
-/* width: 37rem; */
 padding-bottom: 22vh;
-width: 38rem;
-}
-
-#covid-subtitle {
-  width: 60rem;
+width: 36vw;
+/* border:solid; */
 }
 
 .section-title {
@@ -352,6 +348,7 @@ width: 38rem;
   position: relative;
   font-size: 1.7vw;
   line-height: 1.2;
+      width: 60vw;
 }
 
 /*3. MESSAGES SECTION*/
@@ -366,7 +363,7 @@ padding-bottom: 50vh;
 
 #messages-heading {
 /* width: 52rem; */
-width: 45rem;
+width: 42vw;
 padding-bottom: 16vh;
 /* border: solid; */
 }
