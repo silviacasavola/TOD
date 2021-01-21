@@ -83,20 +83,6 @@ gif2.setFrame(0);
 s2.draw = function() {
 s2.clear();
 
-// push()
-s2.fill("#2c2cff");
-s2.textSize(75)
-s2.textLeading(75)
-let title = s2.text("Tanti quanti il tuo\ncuore può contenere", 0, (s2.windowHeight/20)*8)
-// pop()
-
-// push()
-s2.fill(0);
-s2.textSize(28)
-s2.textLeading(29)
-let subtitle = s2.text("Ogni Core rappresenta una persona a cui tieni.\nL'indicatore luminoso ti comunicherà il momento\nideale per la commemorazione.", 0, (s2.windowHeight/20)*12)
-// pop()
-
 s2.image(gif2, s2.windowWidth/2 , 0, (s2.windowHeight/5)*3, s2.windowHeight);
 gif2.pause();
 }
@@ -148,17 +134,6 @@ s3.draw = function() {
 let size = gif3.width * 0.5;
 
 s3.clear();
-
-s3.fill("#2c2cff");
-s3.textSize(75)
-s3.textLeading(75)
-let title = s3.text("Uno per ogni casa", 0, (s3.windowHeight/20)*8)
-
-
-s3.fill(0);
-s3.textSize(28)
-s3.textLeading(29)
-let subtitle = s3.text("L'Hub è la sede per la commemorazione\nnella tua casa, un luogo di meditazione cui\nfar ritorno per ristabilire il contatto con un caro.", 0, (s3.windowHeight/20)*10)
 
 s3.scale(0.5)
 s3.image(gif3, s3.windowWidth - size/2, s3.windowHeight/4);
