@@ -130,3 +130,7 @@ iframe {
   color: #F7F7F7;
   cursor: crosshair;
 }
+
+#foot1 {
+  left: var(--margin);
+}
