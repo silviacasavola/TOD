@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
   right: 0%;
   z-index: 50;
   /* border-style: solid; */
-  transform:translate(0, 10%);
+  transform:translate(-1%, 10%);
 }
 
 #headerbtns {
