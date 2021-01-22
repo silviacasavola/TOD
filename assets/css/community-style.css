@@ -1,6 +1,6 @@
 :root {
   --margin: 9vw;
-  --topmargin: 6vh;
+  --top-margin: 6vh;
   --gridmargin: 20vw;
 
 /* GRID */
@@ -491,8 +491,12 @@ display: none;
   line-height: 1.5rem;
 }
 
-
+/* FOOTER */
 
 #foot1 {
+  left: 0;
+}
+
+#footerline {
   left: 0;
 }

@@ -1,6 +1,6 @@
 :root {
   --margin: 9vw;
-  --topmargin: 6vh;
+  --top-margin: 6vh;
   --gridmargin: 20vw;
 
 /* GRID */
@@ -56,6 +56,7 @@
 
 #first-section, #third-section {
   width: 100vw;
+  /* border: solid; */
 }
 
 /* TITLE */
@@ -100,10 +101,6 @@
   background-color: white;
 }
 
-#third-section {
-  margin-left: var(--margin);
-}
-
 #second-section, #fourth-section, #fifth-section {
   left: var(--margin);
   right: var(--margin);
@@ -113,6 +110,10 @@
   position: absolute;
   top: 50vh;
   transform:translate(0%, -50%);
+}
+
+#content3 {
+  margin-left: var(--margin);
 }
 
 #section4-heading {

@@ -1,6 +1,7 @@
 :root {
   --margin: 9vw;
-  --topmargin: 6vh;
+  --top-margin: 6vh;
+  --bottom-margin: 15vh;
 
 /* GRID */
   --width1: 8.33%;   /* 1/12 */
@@ -14,6 +15,14 @@
   --width9: 75%;   /* 3/4 */
   --width10: 83.33%;   /* 5/6 */
   --width11: 91.66%;   /* 11/12 */
+
+/* LAYERS */
+ --header-layer: 100;
+ --content-layer: 0;
+ --back-content: -20;
+
+/* TOD BLUE <3 */
+ --tod-blue: #2c2cff;
 }
 
 /* FONT */
@@ -51,27 +60,25 @@ body::-webkit-scrollbar {
   top: 0;
 
   font-family: "Whyte", sans-serif;
-  z-index: 20;
+  z-index: var(--header-layer);
 }
 
 #logo {
   width: 4.8vw;
-  margin-top: var(--topmargin);
+  margin-top: var(--top-margin);
   margin-left: var(--margin);
   transform:translate(-148%, -60%);
   /* border-style: solid; */
 }
 
-#headerline {
-  left: var(--margin); right: var(--margin); top: var(--topmargin);
-}
+#headerline {left: var(--margin); right: var(--margin); top: var(--top-margin);}
 
 #menu {
   position: fixed;
-  top: var(--topmargin);
+  top: var(--top-margin);
   width: var(--margin);
   right: 0%;
-  z-index: 50;
+  z-index: var(--header-layer);
   /* border-style: solid; */
   transform:translate(-1%, 10%);
 }
@@ -105,7 +112,7 @@ cursor: crosshair;
   right: var(--margin);
   font-size: 1vw;
   display: flex;
-  z-index: 50;
+  z-index: var(--header-layer);
   /* border-style: solid; */
 }
 
@@ -137,5 +144,12 @@ cursor: crosshair;
 }
 
 .footerlink:hover {
-  color: #2c2cff;
+  color: var(--tod-blue)
+}
+
+
+#footerline {
+  left: var(--margin);
+  right: 0;
+  bottom: var(--bottom-margin);
 }

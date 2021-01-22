@@ -68,13 +68,13 @@ s2.preload = function() {
 }
 
 s2.setup = function() {
-var cnv2 = s2.createCanvas(s2.windowWidth, s2.windowHeight)
+var cnv2 = s2.createCanvas((s2.windowHeight/5)*3, s2.windowHeight)
 
 cnv2.parent("second-section")
 cnv2.style("position", "absolute")
 // cnv2.style("border-style", "solid")
 cnv2.style("z-index", "-20")
-cnv2.position(0, 0)
+cnv2.position(windowWidth/2 + (windowWidth/30), 0)
 s2.select("#second-section").mouseWheel(s2.animategif2);
 
 gif2.setFrame(0);
@@ -83,7 +83,7 @@ gif2.setFrame(0);
 s2.draw = function() {
 s2.clear();
 
-s2.image(gif2, s2.windowWidth/2 , 0, (s2.windowHeight/5)*3, s2.windowHeight);
+s2.image(gif2, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
 gif2.pause();
 }
 
@@ -117,13 +117,13 @@ s3.preload = function() {
 }
 
 s3.setup = function() {
-var cnv3 = s3.createCanvas(s3.windowWidth, s3.windowHeight)
+var cnv3 = s3.createCanvas(s3.windowWidth/2, s3.windowHeight)
 
 cnv3.parent("third-section")
 cnv3.style("position", "absolute")
 // cnv3.style("border-style", "solid")
 cnv3.style("z-index", "-20")
-cnv3.position(0, 0)
+cnv3.position(windowWidth/2, 0)
 s3.select("#third-section").mouseWheel(s3.animategif3);
 
 gif3.setFrame(0);
@@ -136,7 +136,7 @@ let size = gif3.width * 0.5;
 s3.clear();
 
 s3.scale(0.5)
-s3.image(gif3, s3.windowWidth - size/2, s3.windowHeight/4);
+s3.image(gif3, -(windowWidth/7), s3.windowHeight/4);
 
 gif3.pause();
 }
