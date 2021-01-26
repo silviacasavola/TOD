@@ -63,8 +63,11 @@ else {
 
 let sketch = function(s2) {
 
+let coreImage;
+
 s2.preload = function() {
-  gif2 = s2.loadImage('assets/img/scopri/core.gif');
+  core = s2.loadImage('assets/img/scopri/core.gif');
+  core2 = s2.loadImage('assets/img/scopri/core2.gif');
 }
 
 s2.setup = function() {
@@ -77,29 +80,28 @@ cnv2.style("z-index", "-20")
 cnv2.position(windowWidth/2 + (windowWidth/30), 0)
 s2.select("#second-section").mouseWheel(s2.animategif2);
 
-gif2.setFrame(0);
+core.setFrame(0);
   }
 
 s2.draw = function() {
 s2.clear();
 
-s2.image(gif2, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
-gif2.pause();
+coreImage = s2.image(core, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
+core.pause();
 }
 
 s2.animategif2 = function(event) {
-let maxFrame = gif2.numFrames();
+let maxFrame = core.numFrames();
 
 let y = floor(constrain(event.deltaY, -1, 1));
 
 if (y>0 && frameNumber2 < maxFrame) {
     frameNumber2 = frameNumber2 + y;
-    gif2.play()
-    gif2.setFrame(frameNumber2);
+    core.play()
+    core.setFrame(frameNumber2);
   }
 else {
-  gif2.pause();
-  gif2.setFrame(frameNumber2);
+coreImage = s2.image(core2, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
 }
 }
 

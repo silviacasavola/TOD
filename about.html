@@ -2,15 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/common-style.css" data-skrollr-stylesheet />
-    <link rel="stylesheet" type="text/css" href="assets/css/about-style.css" data-skrollr-stylesheet />
+    <link id="style" rel="stylesheet" type="text/css" href="assets/css/about-style.css" data-skrollr-stylesheet />
+    <link id="style" rel="stylesheet" type="text/css" href="assets/css/about-common-style.css" data-skrollr-stylesheet />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="assets/js/p5.min.js"></script>
+    <script src="assets/js/about.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 
     <title>TOD: Chi siamo</title>
     <link rel = "icon" href ="assets/img/icon.png" type = "image/x-icon">
-
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   </head>
 
 <body>
@@ -21,16 +24,15 @@
   </div>
 
   <div id="menu">
-  <div id="headerbtns">
-  <a href="discover.html" class="headerbtn" id="scopri">Scopri</a>
+  <a href="discover.html" class="headerbtn" id="discover">Discover</a>
   <a href="community.html" class="headerbtn" id="community">Community</a>
-  <a href="about.html" class="headerbtn" id="about">Chi siamo</a>
+  <a href="about.html" class="headerbtn" id="about">About</a>
   </div>
   </div>
 
 <!-- SHOW CREDITS BTN -->
 <div style="position: absolute; font-size: 1vw; text-align: center; width: 100vw; top: 50vh; transform:translate(0%, -100%);"> Con calma.</div>
-<div onclick="showCredits()" id="show-credits">Scopri cosa c'è dietro.</div>
+<div onclick="showCredits()" id="show-credits">Scopri cosa c'è dietro</div>
 
 <!-- CREDITS OVERLAY -->
 <!-- <div id="credits-overlay">
@@ -38,16 +40,27 @@
 </div> -->
 
 <script>
+// function showCredits() {
+//   document.getElementById("discover").style.color = "white";
+//   document.getElementById("community").style.color = "white";
+//   document.getElementById("about").style.color = "white";
+//   $("logo").attr("src" , "../img/header/logo-white.png");
+// }
+
+let unveil = false;
+
 function showCredits() {
-  // $(".header-btn").addClass('turnWhite');
-  // $(".header-btn").style.animationPlayState = "running";
-  document.getElementById("about").style.animationPlayState = "running";
-  // $(".header-btn").css('color', 'white');
-  // $("#about").style.color = "white";
-  // document.getElementById("about").style.color = "white";
-  // document.getElementById("about").addClass = 'turnWhite';
-  console.log("I work");
+  if (unveil == false) {
+      document.getElementById('style').setAttribute('href', 'assets/css/about2.css');
+      unveil = true;
+    }
+  else {
+    document.getElementById('style').setAttribute('href', 'assets/css/about-style.css');
+    unveil = false;
   }
+}
+
+
 </script>
 
 

@@ -24,7 +24,7 @@
 }
 
 .headerbtn:hover {
-  color: #2c2cff;
+  color: var(--tod-blue);
   cursor: crosshair;
 }
 

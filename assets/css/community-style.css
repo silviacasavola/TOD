@@ -23,6 +23,11 @@
     content: url('../img/header/logo-blue.png');
 }
 
+.headerbtn:hover {
+  color: var(--tod-blue);
+  cursor: crosshair;
+}
+
 /* TITLE */
 #title {
   position: fixed;

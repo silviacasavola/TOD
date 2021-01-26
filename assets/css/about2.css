@@ -1,0 +1,30 @@
+/* BODY */
+body {
+cursor: crosshair;
+  -webkit-animation: bodyTurnBlue 2s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes bodyTurnBlue {
+  0% {background-color: white}
+ 100% {background-color: var(--tod-blue)}
+  }
+
+#logo:hover {
+    content: url('../img/header/logo-white.png');
+}
+
+.headerbtn:hover, .footerlink:hover {
+  color: white;
+}
+
+/* SHOW CREDITS */
+ #show-credits {
+   -webkit-animation: creditsDisappear 2s 1;
+   animation-fill-mode: forwards;
+ }
+
+@keyframes creditsDisappear {
+  0% {opacity: 1; display:block;}
+  100% {opacity: 0; display:none;}
+}

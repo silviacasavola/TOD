@@ -139,13 +139,25 @@ cursor: crosshair;
   color: black;
 }
 
-.footerlink:hover {
-  color: var(--tod-blue)
-}
-
-
 #footerline {
   left: var(--margin);
   right: 0;
   bottom: var(--bottom-margin);
+}
+
+
+/* FOOTER */
+#foot1 {
+  left: var(--margin);
+}
+
+
+/* BTS BUTTON */
+#show-credits {
+  position: absolute;
+  bottom: 10vh;
+  left: 50vw;
+  transform:translate(-50%, 0);
+  color: blue;
+  text-decoration: underline;
 }
