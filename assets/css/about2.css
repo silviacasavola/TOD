@@ -1,14 +1,4 @@
-/* BODY */
-body {
-cursor: crosshair;
-  -webkit-animation: bodyTurnBlue 2s 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes bodyTurnBlue {
-  0% {background-color: white}
- 100% {background-color: var(--tod-blue)}
-  }
+/* HEADER */
 
 #logo:hover {
     content: url('../img/header/logo-white.png');
@@ -18,13 +8,21 @@ cursor: crosshair;
   color: white;
 }
 
-/* SHOW CREDITS */
- #show-credits {
-   -webkit-animation: creditsDisappear 2s 1;
-   animation-fill-mode: forwards;
- }
 
-@keyframes creditsDisappear {
-  0% {opacity: 1; display:block;}
-  100% {opacity: 0; display:none;}
+/* SHOW CREDITS BTN */
+#show-credits-btn {
+  content: url('../img/about/plus-white.png');
+}
+
+
+
+/* CREDITS */
+#credits-container {
+  -webkit-animation: credits-container-appear 1s 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes credits-container-appear {
+ 0% {opacity: 0}
+ 100% {opacity: 1}
 }

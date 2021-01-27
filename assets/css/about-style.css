@@ -12,6 +12,15 @@
 }
 
 /* BTS BUTTON */
-#show-credits {
+#show-credits-text {
   display: block;
+}
+
+#credits-container {
+  opacity: 0;
+ }
+
+@keyframes credits-container-disappear {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
 }

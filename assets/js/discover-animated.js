@@ -9,7 +9,7 @@ let frameNumber3 = 0;
 
 
  function preload() {
-   gif = loadImage('assets/img/scopri/tod.gif');
+   gif = loadImage('assets/img/discover/tod.gif');
  }
 
  function setup() {
@@ -64,7 +64,7 @@ else {
 let sketch = function(s2) {
 
 s2.preload = function() {
-  gif2 = s2.loadImage('assets/img/scopri/core.gif');
+  gif2 = s2.loadImage('assets/img/discover/core.gif');
 }
 
 s2.setup = function() {
@@ -113,7 +113,7 @@ let s2 = new p5(sketch);
 let sketch2 = function(s3) {
 
 s3.preload = function() {
-  gif3 = s3.loadImage('assets/img/scopri/hub.gif');
+  gif3 = s3.loadImage('assets/img/discover/hub.gif');
 }
 
 s3.setup = function() {

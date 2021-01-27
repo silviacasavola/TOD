@@ -22,6 +22,7 @@
  --header-layer: 100;
  --content-layer: 0;
  --back-content: -20;
+ --overlay-layer: 50;
 
 /* TOD BLUE <3 */
  --tod-blue: #2c2cff;
@@ -152,12 +153,90 @@ cursor: crosshair;
 }
 
 
-/* BTS BUTTON */
 #show-credits {
   position: absolute;
-  bottom: 10vh;
-  left: 50vw;
-  transform:translate(-50%, 0);
+  bottom: var(--top-margin);
+  /* border: solid; */
+  text-align: center;
+  width: 100%;
+}
+
+/* SHOW CREDITS TEXT */
+
+#show-credits-text {
+  margin: auto;
   color: blue;
-  text-decoration: underline;
+  padding: 1vw;
+
+  -webkit-animation: showCreditsDisappear 1s 1;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+ }
+
+@keyframes showCreditsDisappear {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+
+/* SHOW CREDITS BTN */
+#show-credits-btn {
+  width: 2vw;
+  animation: plusAnimation1 1s infinite;
+  z-index: var(--header-layer);
+}
+
+
+
+@keyframes plusAnimation1 {
+  0% {transform:translate(0, 0%)}
+  50% {transform:translate(0, 30%)}
+  100% {transform:translate(0, 0%)}
+}
+
+
+@keyframes plusAnimation2 {
+  0% {transform:rotate(0deg)}
+  100% {transform: rotate(-45deg)}
+}
+
+
+@keyframes plusAnimation3 {
+0% {transform:rotate(-45deg)}
+100% {transform: rotate(0deg)}
+}
+
+
+
+
+/* ABOUT TEXT */
+#about-text {
+  position: absolute;
+  top: 20vh;
+  left: var(--margin);
+  right: var(--margin);
+  font-size: 5vw;
+  color: blue;
+}
+
+
+/* CREDITS */
+#credits-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--tod-blue);
+  z-index: 0;
+}
+
+#credits-text {
+  position: absolute;
+  top: 20vh;
+  left: var(--margin);
+  right: var(--margin);
+  font-size: 5vw;
+  color: white;
 }

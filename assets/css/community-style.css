@@ -33,7 +33,7 @@
   position: fixed;
   left: var(--margin);
   top: 50vh;
-  transform:translate(-1%, -60%);
+  transform:translate(-1%, -58%);
   font-size: 15.4vw;
   z-index: +10;
   color: #2c2cff;
@@ -78,8 +78,8 @@
 /* BOOKMARKS */
 #bookmarks {
   position: fixed;
-  top: 70%;
-  left: 2vw;
+  top: 40%;
+  left: var(--header-margin);
   /* width: 300px; */
   /* border-style: solid; */
 }

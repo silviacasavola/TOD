@@ -12,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 
-    <title>TOD: Chi siamo</title>
+    <title>TOD: About</title>
     <link rel = "icon" href ="assets/img/icon.png" type = "image/x-icon">
   </head>
 
@@ -30,32 +30,44 @@
   </div>
   </div>
 
-<!-- SHOW CREDITS BTN -->
-<div style="position: absolute; font-size: 1vw; text-align: center; width: 100vw; top: 50vh; transform:translate(0%, -100%);"> Con calma.</div>
-<div onclick="showCredits()" id="show-credits">Scopri cosa c'è dietro</div>
+<!-- ABOUT CONTENT -->
+<div id="about-text">"TOD" collabora con x y z.</div>
 
-<!-- CREDITS OVERLAY -->
-<!-- <div id="credits-overlay">
-<div id="credits"></div>
-</div> -->
+<!-- CREDITS CONTENT -->
+<div id="credits-container">
+<div id="credits-text">TOD" è un progetto di design speculativo elaborato per il Laboratorio di Sintesi Finale C1 di Design della Comunicazione al Politecnico di Milano.</div>
+</div>
+
+<!-- SHOW CREDITS BTN -->
+<div id="show-credits">
+<div id="show-credits-text">Scopri cosa c'è dietro</div>
+<img id="show-credits-btn" src="assets/img/about/plus-blue.png" onclick="showCredits()">
+</div>
+
+
+
 
 <script>
-// function showCredits() {
-//   document.getElementById("discover").style.color = "white";
-//   document.getElementById("community").style.color = "white";
-//   document.getElementById("about").style.color = "white";
-//   $("logo").attr("src" , "../img/header/logo-white.png");
-// }
 
 let unveil = false;
 
 function showCredits() {
   if (unveil == false) {
       document.getElementById('style').setAttribute('href', 'assets/css/about2.css');
+      document.getElementById("show-credits-btn").style.animation = "plusAnimation2 1s 1";
+      document.getElementById("show-credits-btn").style.animationFillMode = "forwards";
+      document.getElementById("show-credits-text").style.animationPlayState = "running";
+      document.getElementById("credits-container").style.animation = "credits-container-appear 1s 1";
+
       unveil = true;
     }
   else {
     document.getElementById('style').setAttribute('href', 'assets/css/about-style.css');
+    document.getElementById("show-credits-btn").style.animation = "plusAnimation3 1s 1";
+    document.getElementById("credits-container").style.opacity = "1";
+    document.getElementById("credits-container").style.animation = "credits-container-disappear 1s 1";
+    document.getElementById("credits-container").style.animationFillMode = "forwards";
+
     unveil = false;
   }
 }
