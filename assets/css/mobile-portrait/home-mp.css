@@ -102,7 +102,6 @@ width: 100%;
   top: 250vh;
   padding-bottom: 20vh;
   width: 100vw;
-  border-style: solid;
 }
 iframe {
   position: relative;
@@ -111,9 +110,6 @@ iframe {
   height: 56.25VW;
   overflow: hidden;
 }
-}
-
-
 
 
 /* HIDE DESKTOP STUFF */
