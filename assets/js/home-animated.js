@@ -6,13 +6,15 @@ function setup() {
  const footer = document.getElementById("footer");
 
  select("#footer").position(0, pageHeight)
- 
+
   cnv = createCanvas(0, 0);
 }
 
 function draw() {
 	background(color("white"));
 
+
+if (windowWidth > 991) {
 
 // CLAIM
 let myText;
@@ -53,5 +55,7 @@ blobY = constrain (pageY, -blob.height/2, pageHeight-90)
 
 select("#blob").position(blobX, blobY)
 });
+
+}
 
 }
