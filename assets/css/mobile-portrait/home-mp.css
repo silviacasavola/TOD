@@ -107,6 +107,7 @@ iframe {
   position: relative;
   /* display: block; */
   width: 100%;
+  right: 0;
   height: 56.25VW;
   overflow: hidden;
 }
