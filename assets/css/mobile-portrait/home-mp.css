@@ -75,7 +75,7 @@ width: 100%;
   transform: translate(-50%, -50%);
 
 
-  -skrollr-animation-name:biggerBlobmobile;
+  /* -skrollr-animation-name:biggerBlobmobile1; */
   }
 
   @-skrollr-keyframes biggerBlobmobile {
