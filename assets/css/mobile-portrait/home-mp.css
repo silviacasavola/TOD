@@ -117,8 +117,6 @@ iframe {
 
 
 /* HIDE DESKTOP STUFF */
-#blobdiv, #claim, iframe {
-  display: none;
-}
+#claim {display: none}
 
 #blobdiv {display: none}
