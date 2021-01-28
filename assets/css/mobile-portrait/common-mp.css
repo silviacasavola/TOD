@@ -71,6 +71,7 @@ body::-webkit-scrollbar {
 #headerline {
   left: var(--mobilemargin); right: var(--mobilemargin); top: var(--mobiletopmargin);
   height: 2px;
+  position: fixed;
 }
 
 #menu {
