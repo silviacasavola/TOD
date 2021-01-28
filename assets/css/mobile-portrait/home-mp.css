@@ -67,7 +67,7 @@ width: 100%;
 #blob-mobile {
   display: block;
   position: fixed;
-  width: 250vw;
+  width: 270vw;
   z-index: -10;
   left: 50%;
   top: 50%;
