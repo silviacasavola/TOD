@@ -134,3 +134,10 @@ iframe {
 #foot1 {
   left: var(--margin);
 }
+
+
+
+
+
+/* HIDE MOBILE STUFF */
+#blob-mobile, #claim-mobile {display: none;}

@@ -1,0 +1,120 @@
+@media only screen and (orientation:portrait) and (max-width:991px) {
+
+:root {
+  --mobile-margin: 5vw;
+}
+
+/* CLAIM */
+
+#claim-mobile {
+display: block;
+position: absolute;
+left: var(--mobile-margin);
+top: 35vh;
+width: 100%;
+}
+
+#claim1-mobile {
+  font-size: 16vw;
+  color: #F7F7F7;
+}
+
+#claimline-mobile {
+  width: 12rem;
+  top: 25vh;
+}
+
+#claim2-mobile {
+  position: absolute;
+  top: 40vh;
+  /* width: 100%;
+  text-align: center; */
+  font-size: 5vw;
+  line-height: 1.2;
+}
+
+
+/* PARAGRAPHS */
+
+#paragraphs {
+  position: absolute;
+  left: var(--mobilemargin);
+  margin-right: var(--mobilemargin);
+  height: auto;
+  top: 100vh;
+  margin-top: 10vh;
+  color: #F7F7F7;
+  line-height: 1.1;
+  /* border-style: solid; */
+  }
+
+.paragraph {
+  position: relative;
+  font-size: 5vw;
+  /* border-style: solid; */
+  padding-bottom: 15vh;
+}
+
+.paragraph-title {
+  font-size: 5vw;
+  line-height: 2;
+}
+
+#affetto {
+}
+
+/* FUOCO FATUO */
+#blob-mobile {
+  display: block;
+  position: absolute;
+  width: 250vw;
+  z-index: -10;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  transform: translate(-50%, -50%);
+
+
+  -skrollr-animation-name:biggerBlobmobile;
+  }
+
+  @-skrollr-keyframes biggerBlobmobile {
+  	0  {
+        width: 250vw;
+  	}
+  	10	{
+  		width: 250vw;
+  	}
+    20	{
+    	width: 700vw;
+    	}
+    1800 {
+      width: 700vw;
+    }
+    2000 {
+      width: 250vw;
+    }
+  }
+
+/* VIDEO */
+#video {
+  position: absolute;
+  top: 250vh;
+  padding-bottom: 20vh;
+  width: 100vw;
+  border-style: solid;
+}
+iframe {
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 56.25VW;
+  overflow: hidden;
+}
+}
+
+
+
+
+/* HIDE DESKTOP STUFF */
+#blobdiv, #claim, iframe {display: none;}
