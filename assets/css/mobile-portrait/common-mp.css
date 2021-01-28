@@ -16,6 +16,11 @@
   --width9: 75%;   /* 3/4 */
   --width10: 83.33%;   /* 5/6 */
   --width11: 91.66%;   /* 11/12 */
+
+  /* LAYERS */
+   --header-layer: 100;
+   --content-layer: 0;
+   --back-content: -20;
 }
 
 /* FONT */
@@ -53,7 +58,7 @@ body::-webkit-scrollbar {
   position: fixed;
   top: 0;
 
-  z-index: 20;
+  z-index: var(--header-layer);
 }
 
 #logo {
