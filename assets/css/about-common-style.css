@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
   /* border-style: solid; */
 }
 
-#headerline {left: var(--margin); right: 21vw; top: var(--top-margin);}
+#headerline {left: var(--margin); right: 21vw; top: var(--top-margin); height: 1px;}
 
 #menu {
   position: fixed;

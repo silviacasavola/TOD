@@ -1,6 +1,6 @@
 :root {
     --mobilemargin: 5vw;
-    --mobiletopmargin: 9vw;
+    --mobiletopmargin: 5vh;
 
     --mobilefontsize: 3vw;
 
@@ -54,14 +54,14 @@ body::-webkit-scrollbar {
   top: 0;
 
   z-index: 20;
-  text-align: center;
 }
 
 #logo {
   position: fixed;
-  width: 11vw;
+  width: 15vw;
   top: var(--mobilemargin);
-  /* border-style: solid; */
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 #logo:hover {
@@ -70,6 +70,7 @@ body::-webkit-scrollbar {
 
 #headerline {
   left: var(--mobilemargin); right: var(--mobilemargin); top: var(--mobiletopmargin);
+  height: 2px;
 }
 
 #menu {
