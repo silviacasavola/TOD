@@ -50,17 +50,14 @@ width: 100%;
 
 .paragraph {
   position: relative;
-  font-size: 5vw;
+  font-size: 6vw;
   /* border-style: solid; */
   padding-bottom: 15vh;
 }
 
 .paragraph-title {
-  font-size: 5vw;
+  font-size: 6vw;
   line-height: 2;
-}
-
-#affetto {
 }
 
 /* FUOCO FATUO */
@@ -94,15 +91,15 @@ width: 100%;
     2000 {
       width: 250vw;
     } */
-  }
 
 /* VIDEO */
 #video {
   position: absolute;
-  top: 250vh;
+  top: 220vh;
   padding-bottom: 20vh;
   width: 100vw;
 }
+
 iframe {
   position: relative;
   /* display: block; */
