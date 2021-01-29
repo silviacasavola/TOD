@@ -126,21 +126,21 @@ a:hover {
   position: absolute;
   background-color: var(--tod-blue);
   width: 100%;
-  height: 260px;
+  height: 20vh;
   bottom: 0;
   text-align: center;
 }
 
-#foot2, #foot3 {color: white}
+#foot2 #foot3 {color: white}
 
 #footerline {
   display: none;
 }
 
 .foot {
-  font-size: 32px;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  font-size: 4vw;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
 }
 
 #footer-mobile {
