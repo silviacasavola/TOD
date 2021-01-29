@@ -29,7 +29,7 @@
     <link rel = "icon" href ="assets/img/icon.png" type = "image/x-icon">
   </head>
 
-<body onload="footerPosition()">
+<body onload="footerPosition()" onclick="showBlobMobile()">
 
 <!-- HEADER -->
 <div id = "header">
@@ -115,17 +115,18 @@ col calore della memoria.</div>
 	var s = skrollr.init();
 	</script>
 
-<!-- <script>
-const mouseFollow = document.getElementById('blobdiv');
 
-document.addEventListener('mousemove', (e) => {
-  mouseFollow.style.cssText = `
-    left: ${e.pageX - blob.width}px;
-    top:  ${e.pageY - blob.height}px;
-  `;
-});
-</script> -->
 
-<!-- </canvas> -->
+
+<!-- SHOW BLOB MOBILE -->
+<script>
+function showBlobMobile () {
+  if ($(window).height > $(window).width) {
+    $("#blob-mobile").style.animationPlayState = "running";
+    console.log("ciaone");
+  }
+}
+</script>
+
 </body>
 </html>
