@@ -126,12 +126,12 @@ a:hover {
   position: absolute;
   background-color: var(--tod-blue);
   width: 100%;
-  height: 20vh;
+  height: 30vh;
   bottom: 0;
   text-align: center;
 }
 
-#foot2 #foot3 {color: white}
+#foot2, #foot3 {color: white}
 
 #footerline {
   display: none;
