@@ -126,7 +126,7 @@ a:hover {
   position: absolute;
   background-color: var(--tod-blue);
   width: 100%;
-  height: 30vh;
+  height: 50vh;
   bottom: 0;
   text-align: center;
 }
@@ -138,7 +138,7 @@ a:hover {
 }
 
 .foot {
-  font-size: 4vw;
+  font-size: 5vw;
   padding-bottom: 2vw;
   padding-top: 2vw;
 }
