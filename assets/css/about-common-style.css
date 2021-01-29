@@ -241,3 +241,34 @@ cursor: crosshair;
   font-size: 4vw;
   color: white;
 }
+
+#credits-names-block {
+  position: absolute;
+  bottom: 15vh;
+  left: var(--margin);
+  right: var(--margin);
+}
+
+.credits-names {
+  position: absolute;
+  font-size: 1.3svw;
+  color: white;
+  display: inline-table;
+  bottom: 0;
+}
+
+#studs {
+  left: 0;
+}
+
+#profs {
+  left: 24%;
+}
+
+#ass {
+  left: 51%;
+}
+
+#uni {
+  left: 76%;
+}
