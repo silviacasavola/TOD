@@ -27,7 +27,7 @@ position: inherit;
 top: 50vh;
 width: 100%;
 font-size: 20vw;
-color: white;
+color: #fbfbfb;
 padding-bottom: 10vh;
 transform:translate(0%, -60%);
 
@@ -52,8 +52,8 @@ transform:translate(0%, -60%);
 
 #claim3-mobile {
   position: inherit;
-  top: 50vh;
-  font-size: 5vw;
+  bottom: 10vh;
+  font-size: 3vw;
   text-align: center;
   width: 100%;
 
