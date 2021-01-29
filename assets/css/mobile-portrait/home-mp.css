@@ -114,7 +114,7 @@ transform:translate(0%, -60%);
 
   @keyframes blob-mobile-appear {
    0% {opacity: 0; width: 2vh}
-   100% {opacity: 270vw}
+   100% {opacity: 1; width: 270vw}
   }
 
 
