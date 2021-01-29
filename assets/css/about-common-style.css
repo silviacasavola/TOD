@@ -213,10 +213,10 @@ cursor: crosshair;
 /* ABOUT TEXT */
 #about-text {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: var(--margin);
   right: var(--margin);
-  font-size: 5vw;
+  font-size: 4vw;
   color: blue;
 }
 
@@ -235,9 +235,9 @@ cursor: crosshair;
 
 #credits-text {
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   left: var(--margin);
   right: var(--margin);
-  font-size: 5vw;
+  font-size: 4vw;
   color: white;
 }
