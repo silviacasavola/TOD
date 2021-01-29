@@ -13,15 +13,6 @@ let frameNumber3 = 0;
  }
 
  function setup() {
-// PLACES THE FOOTER AT THE BOTTOM
-  const pageHeight = document.documentElement.scrollHeight;
-  // console.log("pageHeight =" + pageHeight);
-
-  const footer = document.getElementById("footer");
-
-  select("#footer").position(0, pageHeight)
-
-
 // 1ST GIF
    var cnv1 = createCanvas(windowWidth, windowHeight)
    cnv1.parent("first-section");

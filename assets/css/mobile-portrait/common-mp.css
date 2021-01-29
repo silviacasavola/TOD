@@ -123,19 +123,24 @@ a:hover {
 
 /* FOOTER */
 #footer {
-  position: fixed;
+  position: absolute;
   background-color: var(--tod-blue);
   width: 100%;
-  height: 3vh;
+  height: 260px;
   bottom: 0;
+  text-align: center;
 }
+
+#foot2, #foot3 {color: white}
 
 #footerline {
   display: none;
 }
 
 .foot {
-  font-size: 1vw;
+  font-size: 32px;
+  padding-bottom: 6px;
+  padding-top: 6px;
 }
 
 #footer-mobile {
