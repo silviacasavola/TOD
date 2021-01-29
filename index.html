@@ -123,8 +123,14 @@ col calore della memoria.</div>
 window.addEventListener("click", function(event) {
   if (window.innerWidth < window.innerHeight) {
   document.getElementById("blob-mobile").style.animation = "blob-mobile-appear 1s 1";
+  document.getElementById("blob-mobile").style.animationFillMode = "forwards";
+
   document.getElementById("claim2-mobile").style.animation = "claim2-animation 1s 1";
+  document.getElementById("claim2-mobile").style.animationFillMode = "forwards";
+
   document.getElementById("claim3-mobile").style.animation = "claim3-animation 1s 1";
+  document.getElementById("claim3-mobile").style.animationFillMode = "forwards";
+
   }
 })
 </script>
