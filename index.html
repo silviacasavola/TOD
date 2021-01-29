@@ -121,9 +121,8 @@ col calore della memoria.</div>
 <!-- SHOW BLOB MOBILE -->
 <script>
 window.addEventListener("click", function(event) {
-  if ($(window).height > $(window).width) {
+  if (window.innerWidth < window.innerHeight) {
   document.getElementById("blob-mobile").style.animation = "blob-mobile-appear 1s 1";
-    console.log("ciaone");
   }
 })
 </script>
