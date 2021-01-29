@@ -1,6 +1,7 @@
 :root {
     --mobilemargin: 5vw;
     --mobiletopmargin: 5vh;
+    --mobileheaderlinemargin: 7vh;
 
     --mobilefontsize: 3vw;
 
@@ -77,9 +78,10 @@ body::-webkit-scrollbar {
 }
 
 #headerline {
-  left: var(--mobilemargin); right: var(--mobilemargin); top: var(--mobiletopmargin);
-  height: 10;
+  left: var(--mobilemargin); right: var(--mobilemargin); top: var(--mobileheaderlinemargin);
+  height: 10vh;
   position: fixed;
+  padding-top: 3px;
 }
 
 #menu {
