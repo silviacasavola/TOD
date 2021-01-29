@@ -39,6 +39,26 @@ transform:translate(0%, -60%);
   font-size: 5vw;
   text-align: center;
   width: 100%;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes claim-2-animation {
+ 0% {opacity: 0}
+ 100% {opacity: 1}
+}
+
+#claim3-mobile {
+  position: inherit;
+  top: 50vh;
+  font-size: 5vw;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes claim-3-animation {
+ 0% {opacity: 1}
+ 100% {opacity: 0;}
 }
 
 
