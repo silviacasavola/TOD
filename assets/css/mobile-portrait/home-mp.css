@@ -54,6 +54,7 @@ transform:translate(0%, -60%);
   color: #F7F7F7;
   line-height: 1.1;
   /* border-style: solid; */
+  display: none;
   }
 
 .paragraph {
@@ -80,7 +81,6 @@ transform:translate(0%, -60%);
   transform: translate(-50%, -50%);
 
   opacity: 0;
-
 
   /* -skrollr-animation-name:biggerBlobmobile1; */
 
