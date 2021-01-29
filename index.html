@@ -29,7 +29,7 @@
     <link rel = "icon" href ="assets/img/icon.png" type = "image/x-icon">
   </head>
 
-<body onload="footerPosition()" onclick="showBlobMobile()">
+<body>
 
 <!-- HEADER -->
 <div id = "header">
@@ -120,12 +120,12 @@ col calore della memoria.</div>
 
 <!-- SHOW BLOB MOBILE -->
 <script>
-function showBlobMobile () {
+window.addEventListener("click", function(event) {
   if ($(window).height > $(window).width) {
-    $("#blob-mobile").style.animationPlayState = "running";
+  document.getElementById("blob-mobile").style.animation = "blob-mobile-appear 1s 1";
     console.log("ciaone");
   }
-}
+})
 </script>
 
 </body>

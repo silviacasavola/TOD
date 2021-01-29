@@ -79,12 +79,14 @@ transform:translate(0%, -60%);
   height: auto;
   transform: translate(-50%, -50%);
 
+  opacity: 0;
+
 
   /* -skrollr-animation-name:biggerBlobmobile1; */
 
-    -webkit-animation: blob-mobile-appear 1s 1;
+    /* -webkit-animation: blob-mobile-appear 1s 1;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    animation-play-state: paused; */
   }
 
   @keyframes blob-mobile-appear {
