@@ -81,7 +81,7 @@ body::-webkit-scrollbar {
   left: var(--mobilemargin); right: var(--mobilemargin); top: var(--mobileheaderlinemargin);
   height: 10vh;
   position: fixed;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 #menu {
@@ -133,6 +133,8 @@ a:hover {
   height: 50vh;
   bottom: 0;
   text-align: center;
+
+  display: none;
 }
 
 #foot2, #foot3 {color: white}

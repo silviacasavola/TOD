@@ -4,28 +4,41 @@
   --mobile-margin: 5vw;
 }
 
+body {
+min-height: 100vh;
+max-height: 100vh;
+overflow: hidden;
+}
+
 /* CLAIM */
 
 #claim-mobile {
 display: block;
 position: absolute;
-left: var(--mobile-margin);
-top: 30vh;
-width: 90vw;
+width: 100%;
+height: 100%;
+position: fixed;
+z-index: 90;
 text-align: center;
 }
 
 #claim1-mobile {
-  font-size: 20vw;
-  color: #F7F7F7;
-  padding-bottom: 10vh;
+position: inherit;
+top: 50vh;
+width: 100%;
+font-size: 20vw;
+color: #F7F7F7;
+padding-bottom: 10vh;
+transform:translate(0%, -60%);
+
 }
 
 #claim2-mobile {
-  top: 40vh;
+  position: inherit;
+  bottom: 20vh;
   font-size: 5vw;
-  line-height: 1.2;
   text-align: center;
+  width: 100%;
 }
 
 
