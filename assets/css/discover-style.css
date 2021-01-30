@@ -158,7 +158,7 @@
 .grid {
   /* position: absolute; */
   /* width: 100%; */
-  margin-top:10vh;
+  margin-top:12vh;
   right: var(--margin);
   left: var(--margin);
   display: flex;
