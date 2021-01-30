@@ -82,6 +82,7 @@
   left: var(--header-margin);
   /* width: 300px; */
   /* border-style: solid; */
+  transform:translate(-30%, 0);
 }
 
 /* CONTIENE LA RIGA */
