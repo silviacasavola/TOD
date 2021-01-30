@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link id="style" rel="stylesheet" type="text/css" href="assets/css/about-style.css" data-skrollr-stylesheet />
-    <link id="style" rel="stylesheet" type="text/css" href="assets/css/about-common-style.css" data-skrollr-stylesheet />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="style" rel="stylesheet" type="text/css" href="assets/css/about/about1.css" data-skrollr-stylesheet />
+    <link rel="stylesheet" type="text/css" href="assets/css/about/about-common.css" data-skrollr-stylesheet />
+
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="assets/js/p5.min.js"></script>
@@ -13,7 +15,7 @@
 
 
     <title>TOD: About</title>
-    <link rel = "icon" href ="assets/img/icon.png" type = "image/x-icon">
+    <link rel = "icon" href ="../assets/img/icon.png" type = "image/x-icon">
   </head>
 
 <body onload="footerPosition()">
@@ -76,7 +78,7 @@ let unveil = false;
 
 function showCredits() {
   if (unveil == false) {
-      document.getElementById('style').setAttribute('href', 'assets/css/about2.css');
+      document.getElementById('style').setAttribute('href', 'assets/css/about/about2.css');
       document.getElementById("show-credits-btn").style.animation = "plusAnimation2 1s 1";
       document.getElementById("show-credits-btn").style.animationFillMode = "forwards";
       document.getElementById("show-credits-text").style.animationPlayState = "running";
@@ -85,7 +87,7 @@ function showCredits() {
       unveil = true;
     }
   else {
-    document.getElementById('style').setAttribute('href', 'assets/css/about-style.css');
+    document.getElementById('style').setAttribute('href', 'assets/css/about/about1.css');
     document.getElementById("show-credits-btn").style.animation = "plusAnimation3 1s 1";
     document.getElementById("credits-container").style.opacity = "1";
     document.getElementById("credits-container").style.animation = "credits-container-disappear 1s 1";

@@ -33,10 +33,10 @@
     font-family: 'Whyte';
     src: url('assets/font/Whyte-Regular.eot');
     src: local('Whyte Regular'), local('Whyte-Regular'),
-        url('../font/Whyte-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/Whyte-Regular.woff2') format('woff2'),
-        url('../font/Whyte-Regular.woff') format('woff'),
-        url('../font/Whyte-Regular.ttf') format('truetype');
+        url('../../font/Whyte-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../font/Whyte-Regular.woff2') format('woff2'),
+        url('../../font/Whyte-Regular.woff') format('woff'),
+        url('../../font/Whyte-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
