@@ -216,12 +216,3 @@
   line-height: 2vw;
   left:0%;
 }
-
-
-
-
-/* FOOTER */
-
-#foot1 {
-  left: var(--margin);
-}

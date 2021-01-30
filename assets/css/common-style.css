@@ -119,6 +119,10 @@ cursor: crosshair;
   padding-bottom: 4vh;
 }
 
+#foot1 {
+  left: var(--margin);
+}
+
 #foot2 {
   left: 33%;
   /* transform: translate(+50%, 0); */
