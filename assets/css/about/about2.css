@@ -1,7 +1,7 @@
 /* HEADER */
 
 #logo:hover {
-    content: url('../img/header/logo-white.png');
+    content: url('../../img/header/logo-white.png');
 }
 
 .headerbtn:hover, .footerlink:hover {

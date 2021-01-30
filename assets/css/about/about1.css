@@ -3,7 +3,7 @@
 }
 
 #logo:hover {
-    content: url('../img/header/logo-blue.png');
+    content: url('../../img/header/logo-blue.png');
 }
 
 .headerbtn:hover {
