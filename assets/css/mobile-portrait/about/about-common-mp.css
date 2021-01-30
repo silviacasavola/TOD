@@ -19,11 +19,10 @@
   --width11: 91.66%;   /* 11/12 */
 
 /* LAYERS */
- --header-layer: 50;
- --footer-layer: 10;
+ --header-layer: 100;
  --content-layer: 0;
  --back-content: -20;
- --overlay-layer: 20;
+ --overlay-layer: 50;
 
 /* TOD BLUE <3 */
  --tod-blue: #2c2cff;
@@ -34,10 +33,10 @@
     font-family: 'Whyte';
     src: url('assets/font/Whyte-Regular.eot');
     src: local('Whyte Regular'), local('Whyte-Regular'),
-        url('../../font/Whyte-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../../font/Whyte-Regular.woff2') format('woff2'),
-        url('../../font/Whyte-Regular.woff') format('woff'),
-        url('../../font/Whyte-Regular.ttf') format('truetype');
+        url('../../../font/Whyte-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../../font/Whyte-Regular.woff2') format('woff2'),
+        url('../../../font/Whyte-Regular.woff') format('woff'),
+        url('../../../font/Whyte-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -47,6 +46,7 @@ body {
   margin:0;
   padding: 0;
   width: 100%;
+  overflow:scroll;
   overflow-x: hidden;
   cursor: crosshair;
   font-family: "Whyte", sans-serif;
@@ -110,7 +110,8 @@ cursor: crosshair;
   right: var(--margin);
   font-size: 1vw;
   display: flex;
-  z-index: var(--footer-layer);
+  z-index: var(--header-layer);
+  /* border-style: solid; */
 }
 
 .foot {
@@ -155,11 +156,10 @@ cursor: crosshair;
 
 #show-credits {
   position: absolute;
-  top: 75vh;
+  bottom: var(--top-margin);
   /* border: solid; */
   text-align: center;
   width: 100%;
-  z-index: var(--header-layer);
 }
 
 /* SHOW CREDITS TEXT */
@@ -228,10 +228,10 @@ cursor: crosshair;
   left: 0;
   margin: 0;
   width: 100%;
+  height: 100%;
   background-color: var(--tod-blue);
-  z-index: var(--overlay-layer);
+  z-index: 0;
   line-height: 1.1;
-  padding-bottom: 30vh;
 }
 
 #credits-text {
@@ -239,28 +239,21 @@ cursor: crosshair;
   top: 15vh;
   left: var(--margin);
   right: var(--margin);
-  height: 60vh;
-}
-
-
-#credits-paragraph {
-  top: 0;
-  left: 0;
-  right: 0;
   font-size: 4vw;
   color: white;
 }
 
 #credits-names-block {
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  bottom: 15vh;
+  left: var(--margin);
+  right: var(--margin);
   line-height: 1.3;
 }
 
 .credits-names {
   position: absolute;
-  font-size: 1vw;
+  font-size: 1.3svw;
   color: white;
   display: inline-table;
   bottom: 0;
@@ -295,35 +288,13 @@ color: var(--tod-blue);
 
 
 
-
-/* VIDEO */
-#video {
-  position: absolute;
-  bottom: 0vh;
-  padding-bottom: 25vh;
-  width: 100vw;
-}
-iframe {
-  position: relative;
-  margin: auto;
-  display: block;
-  width: 82vw;
-  height: 46.125vw;
-  overflow: hidden;
-}
-
-
-
-
-
-
 /* FOOTER */
 #footer {
   position: absolute;
   right: var(--margin);
   font-size: 1vw;
   display: flex;
-  z-index: 0;
+  z-index: var(--header-layer);
   /* border-style: solid; */
 }
 
@@ -361,20 +332,6 @@ iframe {
 
 #footerline {
   left: var(--margin);
-  right: 0;
-  bottom: var(--bottom-margin);
-}
-
-
-#footerline1 {
-  left: var(--margin);
-  right: 44vw;
-  bottom: var(--bottom-margin);
-}
-
-
-#footerline2 {
-  left: 53vw;
   right: 0;
   bottom: var(--bottom-margin);
 }
