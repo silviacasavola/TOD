@@ -25,6 +25,9 @@
 
 /* TOD BLUE <3 */
  --tod-blue: #2c2cff;
+
+/* FONT SIZE */
+--font-size: 5.2vw;
 }
 
 /* FONT */
@@ -200,7 +203,7 @@ cursor: crosshair;
   top: 12vh;
   left: var(--mobilemargin);
   right: var(--mobilemargin);
-  font-size: 6.5vw;
+  font-size: var(--font-size);
   color: blue;
 }
 
@@ -233,7 +236,7 @@ cursor: crosshair;
   top: 0;
   left: 0;
   right: 0;
-  font-size: 6vw;
+  font-size: var(--font-size);
   color: white;
   z-index: var(--overlay-layer);
 }

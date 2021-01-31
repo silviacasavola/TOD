@@ -39,7 +39,7 @@
 
 .subtitle {
   position: absolute;
-  font-size: 5.2vw;
+  font-size: var(--font-size);
   color: black;
 }
 
@@ -170,7 +170,7 @@ left: var(--mobilemargin);
 
 .member-id {
   position: relative;
-  font-size: 9vw;
+  font-size: 8vw;
   color: white;
   top: 0;
   padding-bottom: 2vh;
@@ -178,6 +178,6 @@ left: var(--mobilemargin);
 
 .member-text {
   position: relative;
-  font-size: 6vw;
+  font-size: var(--font-size);
   bottom: 0;
 }
