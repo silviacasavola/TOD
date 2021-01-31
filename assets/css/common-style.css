@@ -94,12 +94,17 @@ body::-webkit-scrollbar {
   font-size: 1vw;
   font-family: "Whyte", sans-serif;
   color: black;
-  /* border-style: solid; */
 }
 
 #discover, #community {padding-right: var(--header-margin)}
 
 a {
+text-decoration: none;
+cursor: crosshair;
+color: black;
+}
+
+a .headerbtn {
 text-decoration: none;
 cursor: crosshair;
 color: black;
