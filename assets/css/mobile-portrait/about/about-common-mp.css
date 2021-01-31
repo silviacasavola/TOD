@@ -20,8 +20,8 @@
 /* LAYERS */
  --overlay-layer: 0;
  --top-content: 10;
-  --menu-layer: 20;
- --header-layer: 30;
+  --menu-layer: 50;
+ --header-layer: 100;
 
 /* TOD BLUE <3 */
  --tod-blue: #2c2cff;
@@ -142,7 +142,7 @@ cursor: crosshair;
   /* border: solid; */
   text-align: center;
   width: 100%;
-  z-index: 1000;
+  z-index: var(--top-layer);
 }
 
 /* SHOW CREDITS TEXT */

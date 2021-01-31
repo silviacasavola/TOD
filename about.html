@@ -49,13 +49,6 @@
 psicologia e nuove tecnologie e realizzare prodotti digitali che siano di beneficio alla società e migliorino la vita dei suoi utenti.</div>
 
 
-<!-- SHOW CREDITS BTN -->
-<div id="show-credits">
-<div id="show-credits-text">Scopri cosa c'è dietro</div>
-<img id="show-credits-btn" src="assets/img/about/plus-blue.png" onclick="showCredits()">
-</div>
-
-
 <!-- CREDITS CONTENT -->
 <div id="credits-container">
 
@@ -107,6 +100,12 @@ psicologia e nuove tecnologie e realizzare prodotti digitali che siano di benefi
 <iframe id="myVideo2" src="https://player.vimeo.com/video/493549915" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
+<!-- SHOW CREDITS BTN -->
+<div id="show-credits">
+<div id="show-credits-text">Scopri cosa c'è dietro</div>
+<img id="show-credits-btn" src="assets/img/about/plus-blue.png" onclick="showCredits()">
+</div>
+
 <script>
 
 let unveil = false;
@@ -147,6 +146,11 @@ function showCredits() {
       document.getElementById("menu").style.animation = "show-menu 1s 1";
       document.getElementById("menu").style.animationFillMode = "forwards";
       open = true;
+      //
+      // if (window.innerWidth < window.innerHeight) {
+      //     document.getElementById("show-credits").style.animation = "show-menu 1s 1";
+      //     document.getElementById("show-credits").style.animationFillMode = "forwards";
+      // }
   }
 
   else if (open == true) {
