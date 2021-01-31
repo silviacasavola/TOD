@@ -58,7 +58,6 @@ let coreImage;
 
 s2.preload = function() {
   core = s2.loadImage('assets/img/discover/core.gif');
-  core2 = s2.loadImage('assets/img/discover/core2.gif');
 }
 
 s2.setup = function() {
@@ -77,7 +76,7 @@ core.setFrame(0);
 s2.draw = function() {
 s2.clear();
 
-coreImage = s2.image(core, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
+s2.image(core, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
 core.pause();
 }
 
@@ -86,16 +85,22 @@ let maxFrame = core.numFrames();
 
 let y = floor(constrain(event.deltaY, -1, 1));
 
-if (y>0 && frameNumber2 < maxFrame) {
+if (y>0 && frameNumber2 < 127) {
     frameNumber2 = frameNumber2 + y;
     core.play()
     core.setFrame(frameNumber2);
   }
-else {
-coreImage = s2.image(core2, 0, 0, (s2.windowHeight/5)*3, s2.windowHeight);
-}
+if (frameNumber2 >= 126) {
+s2.animategif2b();
 }
 
+s2.animategif2b = function() {
+  if (frameNumber2 >= 126 && frameNumber2 < maxFrame) {
+    frameNumber2++;
+  }
+  if (frameNumber2 == maxFrame) {
+    frameNumber2--;
+  }
 }
 
 let s2 = new p5(sketch);
