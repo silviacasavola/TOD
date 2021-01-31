@@ -118,10 +118,14 @@ a:focus {outline: none}
   color: var(--tod-blue);
   padding-bottom: 3vh;
   filter: blur(6px); -webkit-filter:blur(6px);
+  background: none;
+  outline: none;
 }
 
 .headerbtn:hover {
   filter: blur(0px); -webkit-filter:blur(0px);
+  background: none;
+  outline: none;
 }
 
 

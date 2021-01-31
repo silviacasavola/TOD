@@ -33,3 +33,5 @@ height: 152vh;
  0% {opacity: 0}
  100% {opacity: 1}
 }
+
+#headerline, #community, #discover {display: none}
