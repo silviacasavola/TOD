@@ -69,22 +69,13 @@ left: var(--mobilemargin);
 }
 
 
-.scroll-down {
+.scroll {
   position: absolute;
-  bottom: 3vh;
   width: 7vw;
   left: 50%;
   transform:translate(-50%, 0);
   z-index: var(--header-layer);
-}
-
-.scroll-up {
-  position: absolute;
-  top: var(--mobiletopmargin);
-  width: 7vw;
-  left: 50%;
-  transform:translate(-50%, -100%);
-  z-index: var(--header-layer);
+  bottom: 3vh;
 }
 
 .scroll-img {
