@@ -78,7 +78,7 @@
 /* BOOKMARKS */
 #bookmarks {
   position: fixed;
-  top: 40%;
+  top: 66.3%;
   left: var(--header-margin);
   /* width: 300px; */
   /* border-style: solid; */
@@ -186,31 +186,31 @@ right: var(--margin);
   height: 20vw;
   display: flex;
   flex-direction: row;
-  /* border-style: solid; */
   margin-bottom: 5vh;
 }
 
 .table-cell1, .table-cell2, .tablecell3 {
-  display: inline-block;
   height: 100%;
   margin-right: var(--width1);
 }
 
 /* RIGHE DISPARI: FOTO; RIGHE PARI: NOME */
 .table-cell1 {
-  float: left;
+  position: absolute;
+  /* border: solid; */
 }
 
 /* LINEA */
 .table-cell2 {
+  position: absolute;
   width: var(--width2);
 }
 
 /* RIGHE DISPARI: NOME; RIGHE PARI: FOTO */
 .table-cell3 {
-  float: right;
-  margin-left: var(--width1);
-  /* border-style: solid; */
+  position: absolute;
+  /* border: solid; */
+  height: 100%;
 }
 
 /* CONTENITORE FOTO SCRITTE OVERLAY */
@@ -228,18 +228,18 @@ right: var(--margin);
   }
 
 .identity {
-  position: relative;
-  top: 40%;
+  position: absolute; top: 50%; transform:translate(0, -40%);
 }
+
 
 .id-city, .id-age {
   font-size: 1vw;
-  line-height: 1.8rem;
 }
 
 .id-name {
   font-size: 2vw;
-  line-height: 1.7rem;
+  line-height: 3vw;
+  transform:translate(-2%, 0);
 }
 
 .image {
@@ -277,30 +277,6 @@ right: var(--margin);
   line-height: 1.1;
 }
 
-/* #container1 {
-  width: var(--width5);
-}
-
-#container2 {
-  width: var(--width5);
-}
-
-#container3 {
-  width: var(--width5);
-}
-
-#container4 {
-  width: var(--width5);
-}
-
-#container5 {
-  width: var(--width5);
-}
-
-#container6 {
-  width: var(--width5);
-} */
-
 /* FOTO A SINISTRA */
 #cell1-3, #cell3-3, #cell5-3 {
   margin-right: var(--width1);
@@ -317,7 +293,25 @@ right: var(--margin);
 margin-left: var(--width1);
 }
 
+/* MARGINE DESTRO NOMI RIGHE DISPARI */
+#cell1-3, #cell3-3, #cell5-3 {
+right: var(--width1);
+}
 
+/* FOTO A DESTRA */
+#cell2-3, #cell4-3, #cell6-3 {
+  position: absolute;
+  right: 0;
+}
+
+/* MARGINE RIGHE */
+#cell1-2, #cell3-2, #cell5-2 {
+  right: var(--width3);
+}
+
+#cell2-2, #cell4-2, #cell6-2 {
+  left: var(--width4);
+}
 
 
 /* 2. COVID SECTION */
@@ -325,19 +319,17 @@ margin-left: var(--width1);
   top: 400vh;
   height: 330vh;
   z-index: 0;
-  /* border: solid; */
 }
 
 .section-heading {
   position: relative;
   margin: auto;
   padding-top: 10vh;
-  /* border-style: solid; */
 }
 
 #covid-heading {
 padding-bottom: 22vh;
-width: 36vw;
+text-align: center;
 /* border:solid; */
 }
 
@@ -354,7 +346,6 @@ width: 36vw;
   position: relative;
   font-size: 1.7vw;
   line-height: 1.2;
-      width: 60vw;
 }
 
 /*3. MESSAGES SECTION*/
@@ -368,10 +359,8 @@ padding-bottom: 50vh;
 }
 
 #messages-heading {
-/* width: 52rem; */
-width: 42vw;
 padding-bottom: 16vh;
-/* border: solid; */
+text-align: center;
 }
 
 #submission-grid {
@@ -385,8 +374,7 @@ padding-bottom: 16vh;
 
 .submission-row {
   width: 100%;
-  height: 40vh;
-  /* border-style: solid; */
+  height: 20vw;
 }
 
 #submit-box {
@@ -395,13 +383,14 @@ padding-bottom: 16vh;
   margin: auto;
   color: white;
   background-color: #2c2cff;
-  padding: 20px 20px 10px 20px;
+  padding: 2vw 2vw 0vw 2vw;
   font-size: 14px;
-  height: 20vw;
+  height: 22vw;
+  margin-bottom: 2vw;
 }
 
 label {
-  padding-bottom: 10px;
+  padding-bottom: 1vw;
 }
 
 .label1 {
@@ -411,11 +400,10 @@ label {
 
 .label2 {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 1vw;
 }
 
 input, input:focus {
-  margin: 8px 0;
   outline: none;
   background: none;
   display: inline-block;
@@ -435,10 +423,10 @@ textarea, textarea:focus {
   background: none;
   color: white;
   border: none;
-  resize: none;
   font-size: 24px;
   font-family: "Whyte", sans-serif;
-  height: 46%;
+  height: 45%;
+  border: solid;
 }
 
 textarea::-webkit-scrollbar {
