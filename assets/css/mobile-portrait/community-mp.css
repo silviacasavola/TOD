@@ -1,6 +1,6 @@
 :root {
   /* LAYERS */
-  --id-layer: 30;
+  --id-layer: 0;
 }
 
 
@@ -13,6 +13,7 @@
   height: 100vh;
   min-height: 100vh;
   overflow: none;
+  z-index: 0;
 }
 
 #intro {
