@@ -151,7 +151,7 @@ cursor: crosshair;
   margin: auto;
   color: blue;
   padding: 1vw;
-  font-size: 4vw;
+  font-size: 3vw;
 
   -webkit-animation: showCreditsDisappear 1s 1;
   animation-fill-mode: forwards;
@@ -224,7 +224,7 @@ cursor: crosshair;
   top: 12vh;
   left: var(--mobilemargin);
   right: var(--mobilemargin);
-  height: 65vh;
+  height: 60vh;
   z-index: var(--overlay-layer);
 }
 
@@ -243,7 +243,7 @@ cursor: crosshair;
   bottom: 0;
   width: 100%;
   height: 40%;
-  line-height: 1.3;
+  line-height: 1.5;
   z-index: var(--overlay-layer);
 }
 
@@ -252,7 +252,6 @@ cursor: crosshair;
   font-size: 3vw;
   color: white;
   display: inline-table;
-  /* bottom: 0; */
 }
 
 #studs-links {
