@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
   transform:translate(0, -20%);
 }
 
-#menu-mobile, #community-mobile, #mobile-footer {display: none};
+#menu-mobile, #community-mobile, #mobile-footer, #home-mobile {display: none};
 
 .headerbtn {
   position: relative;
