@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="assets/css/about/about-common.css" media="screen and (min-width: 991px)" />
 
     <!-- MOBILE PORTRAIT -->
-        <link id="style-mobile" rel="stylesheet" type="text/css" href="assets/css/mobile-portrait/about/about1-mp.css" media="screen and (orientation:portrait) and (max-width:991px)">
+        <link id="style" rel="stylesheet" type="text/css" href="assets/css/mobile-portrait/about/about1-mp.css" media="screen and (orientation:portrait) and (max-width:991px)">
         <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/about/about-common-mp.css' media="screen and (orientation:portrait) and (max-width:991px)">
 
     <!-- MOBILE LANDSCAPE -->
@@ -31,15 +31,12 @@
   <!-- HEADER -->
   <div id = "header">
   <a href="index.html"><img src="assets/img/header/logo.png" id="logo" alt="TOD"></a>
-  <img src="assets/img/header/menu-mobile.png" id="menu-mobile" alt="Menu" onclick="menuMobile()">
   <hr id="headerline" style="position: fixed; height: 1px; border-style: none; background-color: black">
   </div>
 
   <div id="menu">
-  <div id="headerbtns">
   <a href="discover.html" class="headerbtn" id="discover">Discover</a>
   <a href="community.html" class="headerbtn" id="community">Community</a>
-  <a href="community-mobile.html" class="headerbtn" id="community-mobile">Community</a>
   <a href="about.html" class="headerbtn" id="about">About</a>
   </div>
   </div>
@@ -47,14 +44,6 @@
 <!-- ABOUT CONTENT -->
 <div id="about-text">"TOD" collabora con centri di ricerca neuropsicologica e di scienze sociali computazionali per studiare l’intersezione tra
 psicologia e nuove tecnologie e realizzare prodotti digitali che siano di beneficio alla società e migliorino la vita dei suoi utenti.</div>
-
-
-<!-- SHOW CREDITS BTN -->
-<div id="show-credits">
-<div id="show-credits-text">Scopri cosa c'è dietro</div>
-<img id="show-credits-btn" src="assets/img/about/plus-blue.png" onclick="showCredits()">
-</div>
-
 
 <!-- CREDITS CONTENT -->
 <div id="credits-container">
@@ -65,21 +54,18 @@ psicologia e nuove tecnologie e realizzare prodotti digitali che siano di benefi
     <div class="credits-names" id="studs">TEAM<br>
   <a href="mailto:giovanni.bonassi99@gmail.com" id="studs-links">Giovanni Bonassi</a><br>
   <a href="mailto:martinabracchi.mb@gmail.com" id="studs-links">Martina Bracchi</a><br>
-  <a href="mailto:silcasavola@gmail.com" id="studs-links">Silvia Casavola</a><br>
+  <a href="mailto:silcasavola@gmail.co" id="studs-links">Silvia Casavola</a><br>
   <a href="mailto:don.ren99@gmail.com" id="studs-links">Donato Renzulli</a><br>
   <a href="mailto:tom.straga@gmail.com" id="studs-links">Tommaso Stragà</a><br>
   <a href="mailto:matteo.visini.99@gmail.com" id="studs-links">Matteo Visini</a>
 </div>
 <div class="credits-names" id="profs">PROFESSORI<br>Francesco Ermanno Guida<br>Pietro Buffa di Castelalto<br>Alessandro Masserdotti<br>Giacomo Scandolara</div>
-<div class="credits-names" id="ass">ASSISTENTI<br>Marcello Jacopo Biffi<br>Alberto Candido<br>Michele Invernizzi<br>Andrea Pronzati<br>Claudia Tranti</div>
+<div class="credits-names" id="ass">ASSISTENTI<br>Marcello J. Biffi<br>Alberto Candido<br>Michele Invernizzi<br>Andrea Pronzati<br>Claudia Tranti</div>
 <div class="credits-names" id="uni">Politecnico di Milano<br>Design della Comunicazione<br>Lab. di Sintesi finale - C1<br>2020/2021</div>
 </div>
 </div>
 
-<!-- VIDEO -->
-<div id=video>
-<iframe id="myVideo" src="https://player.vimeo.com/video/493549915" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
+
 
 
 <!-- FOOTER -->
@@ -90,8 +76,22 @@ psicologia e nuove tecnologie e realizzare prodotti digitali che siano di benefi
 <div id="foot3" class="foot"><a href="https://www.instagram.com/yourbelovedforever/" class="footerlink">@yourbelovedforever</a></div>
 <div id="foot4" class="foot">© 2020 TOD Lab</div>
 </div>
+
 </div>
 
+<!-- VIDEO -->
+<div id=video>
+<iframe id="myVideo" src="https://player.vimeo.com/video/493549915" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<!-- SHOW CREDITS BTN -->
+<div id="show-credits">
+<div id="show-credits-text">Scopri cosa c'è dietro</div>
+<img id="show-credits-btn" src="assets/img/about/plus-blue.png" onclick="showCredits()">
+</div>
+
+
+<!-- FOOTER -->
 <div id="footer">
 <hr id="footerline1" style="position: absolute; height: 1px; border-style: none; background-color: black">
 <hr id="footerline2" style="position: absolute; height: 1px; border-style: none; background-color: black">
@@ -102,10 +102,6 @@ psicologia e nuove tecnologie e realizzare prodotti digitali che siano di benefi
 </div>
 
 
-<!-- VIDEO -->
-<div id=video2>
-<iframe id="myVideo2" src="https://player.vimeo.com/video/493549915" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
 
 <script>
 
@@ -113,48 +109,26 @@ let unveil = false;
 
 function showCredits() {
   if (unveil == false) {
-  document.getElementById('style').setAttribute('href', 'assets/css/about/about2.css');
-  document.getElementById('style-mobile').setAttribute('href', 'assets/css/mobile-portrait/about/about2-mp.css');
+      document.getElementById('style').setAttribute('href', 'assets/css/about/about2.css');
       document.getElementById("show-credits-btn").style.animation = "plusAnimation2 1s 1";
       document.getElementById("show-credits-btn").style.animationFillMode = "forwards";
       document.getElementById("show-credits-text").style.animationPlayState = "running";
       document.getElementById("credits-container").style.animation = "credits-container-appear 1s 1";
-      document.getElementById("myVideo2").src = "https://player.vimeo.com/video/308767520";
+      document.getElementById("myVideo").src = "https://player.vimeo.com/video/308767520";
 
       unveil = true;
-      console.log("bella")
     }
   else {
     document.getElementById('style').setAttribute('href', 'assets/css/about/about1.css');
-    document.getElementById('style-mobile').setAttribute('href', 'assets/css/mobile-portrait/about/about1-mp.css');
     document.getElementById("show-credits-btn").style.animation = "plusAnimation3 1s 1";
     document.getElementById("credits-container").style.opacity = "1";
     document.getElementById("credits-container").style.animation = "credits-container-disappear 1s 1";
     document.getElementById("credits-container").style.animationFillMode = "forwards";
-    document.getElementById("myVideo2").src = "https://player.vimeo.com/video/493549915";
+    document.getElementById("myVideo").src = "https://player.vimeo.com/video/493549915";
 
     unveil = false;
-    console.log("bella")
   }
 }
-
-  // MENU MOBILE
-  let open = false;
-
-  function menuMobile() {
-
-  if (open == false) {
-      document.getElementById("menu").style.animation = "show-menu 1s 1";
-      document.getElementById("menu").style.animationFillMode = "forwards";
-      open = true;
-  }
-
-  else if (open == true) {
-      document.getElementById("menu").style.animation = "hide-menu 1s 1";
-      document.getElementById("menu").style.animationFillMode = "forwards";
-      open = false;
-  }
-  }
 
 
 </script>

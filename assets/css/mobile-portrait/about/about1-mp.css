@@ -1,0 +1,27 @@
+.footerlink:hover {
+  color: var(--tod-blue)
+}
+
+#logo:hover {
+    content: url('../img/header/logo-blue.png');
+}
+
+.headerbtn:hover {
+  color: var(--tod-blue);
+  cursor: crosshair;
+}
+
+/* BTS BUTTON */
+#show-credits-text {
+  display: block;
+}
+
+#credits-container {
+  opacity: 0;
+
+ }
+
+@keyframes credits-container-disappear {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}

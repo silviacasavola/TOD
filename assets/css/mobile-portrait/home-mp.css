@@ -20,6 +20,7 @@ height: 100%;
 position: fixed;
 z-index: 90;
 text-align: center;
+z-index: var(--content-layer);
 }
 
 #claim1-mobile {
@@ -40,6 +41,10 @@ transform:translate(0%, -60%);
   text-align: center;
   width: 100%;
   opacity: 0;
+
+  animation: claim2-animation 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
 
 @keyframes claim2-animation {
@@ -106,15 +111,11 @@ transform:translate(0%, -60%);
   top: 50%;
   height: auto;
   transform: translate(-50%, -50%);
-  animation-fill-mode: forwards;
 
   opacity: 0;
 
-  /* -skrollr-animation-name:biggerBlobmobile1; */
-
-    /* -webkit-animation: blob-mobile-appear 1s 1;
-    animation-fill-mode: forwards;
-    animation-play-state: paused; */
+  animation: blob-mobile-appear 2s 1;
+  animation-fill-mode: forwards;
   }
 
   @keyframes blob-mobile-appear {

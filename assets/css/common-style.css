@@ -86,6 +86,8 @@ body::-webkit-scrollbar {
   transform:translate(0, -20%);
 }
 
+#menu-mobile, #community-mobile {display: none};
+
 .headerbtn {
   position: relative;
   background-color: transparent;

@@ -1,0 +1,35 @@
+/* HEADER */
+
+#logo:hover {
+    content: url('../../../img/header/logo-white.png');
+}
+
+#menu-mobile:hover {
+    content: url('../../../img/header/menu-mobile-white.png');
+}
+
+.headerbtn:hover, .footerlink:hover {
+  color: white;
+}
+
+
+/* SHOW CREDITS BTN */
+#show-credits-btn {
+  content: url('../../../img/about/plus-white.png');
+}
+
+
+
+/* CREDITS */
+#credits-container {
+height: 152vh;
+  -webkit-animation: credits-container-appear 1s 1;
+  animation-fill-mode: forwards;
+  overflow-y: scroll;
+
+}
+
+@keyframes credits-container-appear {
+ 0% {opacity: 0}
+ 100% {opacity: 1}
+}

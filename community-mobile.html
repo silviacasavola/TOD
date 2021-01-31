@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile-portrait/community-mp.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/mobile-portrait/common-mp.css" />
+
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+
+
+    <!-- <script src="assets/js/p5.min.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="assets/js/home-animated.js"></script> -->
+    <script src="assets/js/mobile/about-mobile.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+    <title>TOD: Community</title>
+    <link rel = "icon" href ="assets/img/icon.png" type = "image/x-iscon">
+  </head>
+
+<!-- <body onload="footerPosition()"> -->
+<body>
+
+<!-- HEADER -->
+<div id = "header">
+<a href="index.html"><img src="assets/img/header/logo.png" id="logo" alt="TOD"></a>
+<img src="assets/img/header/menu-mobile.png" id="menu-mobile" alt="Menu" onclick="menuMobile()">
+</div>
+
+<div id="menu">
+<div id="headerbtns">
+<a href="discover.html" class="headerbtn" id="discover">Discover</a>
+<a href="community.html" class="headerbtn" id="community">Community</a>
+<a href="community-mobile.html" class="headerbtn" id="community-mobile">Community</a>
+<a href="about.html" class="headerbtn" id="about">About</a>
+</div>
+</div>
+
+<img id="scroll" src="assets/img/header/scroll-mobile.png" onclick="scrollPage()">
+
+<div id="intro">
+<div id="title">Community</div>
+<div id="subtitle1" class="subtitle">Non è mai facile, ma insieme<br>un po' di più.</div>
+<div id="subtitle2" class="subtitle">Ognuno di noi ha legami degni<br>di essere raccontati.<br>Sfoglia le storie<br>della community di Tod.</div>
+<hr id="introline1" class="introline" style="position: absolute; width: 2px; border-style: none; background-color: black">
+<hr id="introline2" class="introline" style="position: absolute; width: 2px; border-style: none; background-color: black">
+</div>
+
+
+
+<div id="container1" class="section">
+  <img id="member1" class="member-pic" src="assets/img/community-mobile/1.jpg">
+  <div id="member1-id" class="member-id" style="top: 11vh" >Silvia, 22 anni, Milano</div><br>
+  <div class="member-text-container">
+  <div class="member-text-overlay"></div>
+    <div class="member-text">Mi piace pensare che tu in qualche modo mi stai sentendo. Come stai? In fondo mi dico, chissà, visto che nulla è certo è tutto anche possibile.</div>
+</div>
+</div>
+
+<div id="container2" class="section">
+  <img id="member2" class="member-pic" src="assets/img/community-mobile/2.jpg">
+  <div id="member2-id" class="member-id" style="top: 8vh">Sara, 21 anni,<br>Bari</div><br>
+  <div class="member-text-container">
+  <div class="member-text-overlay"></div>
+    <div class="member-text">Il Covid non ti permette di avere quella solidarietà e comunità che dovrebbe esserci in una famiglia quando succede una cosa così drammatica, non ti permette di fare i funerali, non ti permette di vedere una persona per l'ultima volta.</div>
+  </div>
+</div>
+
+<div id="container3" class="section">
+  <img id="member3" class="member-pic" src="assets/img/community-mobile/3.jpg">
+  <div id="member3-id" class="member-id" style="top: 11vh">Guido, 84 anni, Urbino</div><br>
+  <div class="member-text-container">
+  <div class="member-text-overlay"></div>
+    <div class="member-text">Per Lei nessuna cosa era troppo. L’ho sempre pensato, così come penso che l’unica vera fortuna della mia vita sia stato incontrare Lei e poterci vivere assieme.</div>
+  </div>
+</div>
+
+<div id="container4" class="section">
+  <img id="member4" class="member-pic" src="assets/img/community-mobile/4.jpg">
+  <div id="member4-id" class="member-id" style="top: 58vh">Nicolò, 24 anni, Brescia</div><br>
+  <div class="member-text-container">
+  <div class="member-text-overlay"></div>
+    <div class="member-text">Ti vorrei qui come tre anni fa, con quegli occhi dolci e rassicuranti, con quella tua energia bella e pulita. Sei sempre dentro di me.</div>
+  </div>
+</div>
+
+<div id="container5" class="section">
+  <img id="member5" class="member-pic" src="assets/img/community-mobile/5.jpg">
+  <div id="member5-id" class="member-id" style="top: 12vh">Annalisa, 81 anni, Assisi</div><br>
+  <div class="member-text-container">
+  <div class="member-text-overlay"></div>
+    <div class="member-text">Il dolore per la perdita, con il tempo, si è trasformato e non è più dolore, ma fonte di ricchezza interiore. da cui traggo forza. Mio marito è sempre vivo in me, è parte di me, ma non mi appartiene.</div>
+  </div>
+</div>
+
+<div id="container6" class="section">
+  <img id="member6" class="member-pic" src="assets/img/community-mobile/6.jpg">
+  <div id="member6-id" class="member-id" style="top: 10vh">Orazio, 56,<br>Brescia</div>
+  <div class="member-text-container" style="display: none">
+  <div class="member-text-overlay"></div>
+    <div class="member-text">Grazie di tutto, della tua presenza, del tuo amore. Io credo che nessuno mi abbia potuto amare più di quanto mi hai amato tu. Ciao amore, arrivederci.</div>
+  </div>
+</div>
+
+
+
+
+<script>
+
+// MENU
+let open = false;
+
+function menuMobile() {
+
+if (open == false) {
+    document.getElementById("menu").style.animation = "show-menu 1s 1";
+    document.getElementById("menu").style.animationFillMode = "forwards";
+    open = true;
+}
+
+else if (open == true) {
+    document.getElementById("menu").style.animation = "hide-menu 1s 1";
+    document.getElementById("menu").style.animationFillMode = "forwards";
+    open = false;
+}
+}
+
+// OPEN PHOTO
+const section = document.querySelectorAll(".section");
+const text = document.querySelectorAll(".member-text-container");
+let displaytext0 = false;
+let displaytext1 = false;
+let displaytext2 = false;
+let displaytext3 = false;
+let displaytext4 = false;
+let displaytext5 = false;
+
+// 0
+section[0].addEventListener("click", function(){
+if (displaytext0 == false) {
+text[0].style.animation = "show-member-text 1s 1";
+text[0].style.animationFillMode = "forwards";
+displaytext0=true;
+}
+
+else if (displaytext0 == true) {
+text[0].style.animation = "hide-member-text 1s 1";
+text[0].style.animationFillMode = "forwards";
+displaytext0 = false;
+}
+});
+
+
+// 1
+section[1].addEventListener("click", function(){
+if (displaytext1 == false) {
+text[1].style.animation = "show-member-text 1s 1";
+text[1].style.animationFillMode = "forwards";
+displaytext1=true;
+}
+
+else if (displaytext1 == true) {
+text[1].style.animation = "hide-member-text 1s 1";
+text[1].style.animationFillMode = "forwards";
+displaytext1 = false;
+}
+});
+
+
+// 2
+section[2].addEventListener("click", function(){
+if (displaytext2 == false) {
+text[2].style.animation = "show-member-text 1s 1";
+text[2].style.animationFillMode = "forwards";
+displaytext2=true;
+}
+
+else if (displaytext2 == true) {
+text[2].style.animation = "hide-member-text 1s 1";
+text[2].style.animationFillMode = "forwards";
+displaytext2 = false;
+}
+});
+
+// 3
+section[3].addEventListener("click", function(){
+if (displaytext3 == false) {
+text[3].style.animation = "show-member-text 1s 1";
+text[3].style.animationFillMode = "forwards";
+displaytext3=true;
+}
+
+else if (displaytext3 == true) {
+text[3].style.animation = "hide-member-text 1s 1";
+text[3].style.animationFillMode = "forwards";
+displaytext3 = false;
+}
+});
+
+// 4
+section[4].addEventListener("click", function(){
+if (displaytext4 == false) {
+text[4].style.animation = "show-member-text 1s 1";
+text[4].style.animationFillMode = "forwards";
+displaytext4=true;
+}
+
+else if (displaytext4 == true) {
+text[4].style.animation = "hide-member-text 1s 1";
+text[4].style.animationFillMode = "forwards";
+displaytext4 = false;
+}
+});
+
+// 5
+section[5].addEventListener("click", function(){
+if (displaytext5 == false) {
+text[5].style.animation = "show-member-text 1s 1";
+text[5].style.animationFillMode = "forwards";
+displaytext5=true;
+
+section[5].style.maxHeight = "";
+text[5].style.display = "block";
+}
+
+else if (displaytext5 == true) {
+text[5].style.animation = "hide-member-text 1s 1";
+text[5].style.animationFillMode = "forwards";
+displaytext5 = false;
+
+text[5].style.display = "none";
+}
+});
+
+
+</script>
+
+</body>
+</html>

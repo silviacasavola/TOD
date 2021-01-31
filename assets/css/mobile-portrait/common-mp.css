@@ -1,7 +1,6 @@
 :root {
     --mobilemargin: 5vw;
     --mobiletopmargin: 5vh;
-    --mobileheaderlinemargin: 12vw;
 
     --mobilefontsize: 3vw;
 
@@ -22,6 +21,7 @@
    --header-layer: 100;
    --content-layer: 0;
    --back-content: -20;
+   --menu-layer: 50;
 
    /* TOD BLUE <3 */
    --tod-blue: #2c2cff;
@@ -69,43 +69,61 @@ body::-webkit-scrollbar {
   position: fixed;
   width: 15vw;
   top: var(--mobilemargin);
-  left: 50%;
-  transform: translate(-50%, 0%);
+  left: var(--mobilemargin);
 }
 
 #logo:hover {
     content: url('../../img/header/logo-blue.png');
 }
 
-#headerline {
-  left: var(--mobilemargin); right: var(--mobilemargin); top: var(--mobileheaderlinemargin);
-  height: 10vh;
+#menu-mobile {
   position: fixed;
-  padding-top: 2px;
+  right: var(--mobilemargin);
+  top: var(--mobilemargin);
+  width: 5vw;
 }
 
+#headerline, #community, #discover {display: none}
+
+
 #menu {
-  display: none;
   position: fixed;
-  top: var(--mobiletopmargin);
+  left: 100%;
+  top: 0;
   width: 100vw;
-  left: 0;
-  z-index: var(--header-layer);
-  /* border-style: solid; */
-  transform:translate(0%, -100%);
+  height: 100vh;
+  padding-top: 38vh;
+  background: white;
+  z-index: var(--menu-layer);
+}
+
+a:focus {outline: none}
+
+@keyframes show-menu {
+ 0% {left: 100%}
+ 100% {left: 0%}
+}
+
+@keyframes hide-menu {
+ 0% {left: 0%}
+ 100% {left: 100%}
 }
 
 .headerbtn {
-  padding-left: var(--mobilemargin);
-  /* padding-right: var(--mobilemargin); */
+  text-align: center;
+  width: 100%;
   border: none;
-  background-color: transparent;
-  /* margin-bottom: 1rem; */
-  font-size: var(--mobilefontsize);
+  font-size: 6.5vh;
   display: block;
-  color: black;
-  /* border-style: solid; */
+  color: var(--tod-blue);
+  padding-bottom: 3vh;
+  filter: blur(6px); -webkit-filter:blur(6px);
 }
+
+.headerbtn:hover {
+  filter: blur(0px); -webkit-filter:blur(0px);
+}
+
 
 a {
 text-decoration: none;
@@ -115,31 +133,8 @@ a:hover {
   color: #2c2cff;
 }
 
-#community {
-  float: left;
-}
-
-#about {
-  float: right;
-}
-
 /* FOOTER */
 #footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: var(--tod-blue);
-  width: 100%;
-  height: 50vh;
-  bottom: 0;
-  text-align: center;
-
-  display: none;
-}
-
-#foot2, #foot3 {color: white}
-
-#footerline {
   display: none;
 }
 

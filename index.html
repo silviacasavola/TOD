@@ -34,6 +34,7 @@
 <!-- HEADER -->
 <div id = "header">
 <a href="index.html"><img src="assets/img/header/logo.png" id="logo" alt="TOD"></a>
+<img src="assets/img/header/menu-mobile.png" id="menu-mobile" alt="Menu" onclick="menuMobile()">
 <hr id="headerline" style="position: fixed; height: 1px; border-style: none; background-color: black">
 </div>
 
@@ -41,6 +42,7 @@
 <div id="headerbtns">
 <a href="discover.html" class="headerbtn" id="discover">Discover</a>
 <a href="community.html" class="headerbtn" id="community">Community</a>
+<a href="community-mobile.html" class="headerbtn" id="community-mobile">Community</a>
 <a href="about.html" class="headerbtn" id="about">About</a>
 </div>
 </div>
@@ -56,8 +58,6 @@
 <div id="claim-mobile"> <!-- MOBILE -->
   <div id="claim1-mobile">Your<br>beloved,<br>forever.</div>
   <div id="claim2-mobile">Sky is no limit for those who love.</div>
-  <div id="claim3-mobile">Tap on your screen to find out.</div>
-  <div id="claim4-mobile">Coming soon</div>
 </div>
 
 <!-- PARAGRAFI -->
@@ -121,24 +121,23 @@ col calore della memoria.</div>
 
 <!-- SHOW BLOB MOBILE -->
 <script>
-window.addEventListener("click", function(event) {
-  if (window.innerWidth < window.innerHeight) {
-  document.getElementById("blob-mobile").style.animation = "blob-mobile-appear 1s 1";
-  document.getElementById("blob-mobile").style.animationFillMode = "forwards";
+// MENU MOBILE
+let open = false;
 
-  document.getElementById("claim2-mobile").style.animation = "claim2-animation 1s 1";
-  document.getElementById("claim2-mobile").style.animationDelay = "1s";
-  document.getElementById("claim2-mobile").style.animationFillMode = "forwards";
+function menuMobile() {
 
-  document.getElementById("claim3-mobile").style.animation = "claim3-animation 1s 1";
-  document.getElementById("claim3-mobile").style.animationFillMode = "forwards";
+if (open == false) {
+    document.getElementById("menu").style.animation = "show-menu 1s 1";
+    document.getElementById("menu").style.animationFillMode = "forwards";
+    open = true;
+}
 
-  document.getElementById("claim4-mobile").style.animation = "claim2-animation 1s 1";
-  document.getElementById("claim4-mobile").style.animationDelay = "1s";
-  document.getElementById("claim4-mobile").style.animationFillMode = "forwards";
-
-  }
-})
+else if (open == true) {
+    document.getElementById("menu").style.animation = "hide-menu 1s 1";
+    document.getElementById("menu").style.animationFillMode = "forwards";
+    open = false;
+}
+}
 </script>
 
 </body>
