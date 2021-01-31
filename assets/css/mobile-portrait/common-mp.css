@@ -123,9 +123,16 @@ a:focus {outline: none}
 }
 
 .headerbtn:hover {
-  filter: blur(0px); -webkit-filter:blur(0px);
   background: none;
   outline: none;
+
+  animation: menuhover 1s 1;
+  animationFillMode: forwards;
+}
+
+@keyframes menuhover {
+ 0% {filter: blur(6px); -webkit-filter:blur(6px);}
+ 100% {filter: blur(0px); -webkit-filter:blur(0px);}
 }
 
 
