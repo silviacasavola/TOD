@@ -296,9 +296,12 @@ color: var(--tod-blue);
   position: absolute;
   bottom: 0;
   width: 100vw;
-  z-index: var(--top-layer)
-
+  /* border: solid; */
+  height: 30vh;
+  padding-bottom: 10vh;
+  z-index: var(--top-layer);
 }
+
 iframe {
   position: relative;
 border: none;
