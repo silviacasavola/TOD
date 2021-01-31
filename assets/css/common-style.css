@@ -102,6 +102,7 @@ body::-webkit-scrollbar {
 a {
 text-decoration: none;
 cursor: crosshair;
+color: black;
 }
 
 /* FOOTER */
