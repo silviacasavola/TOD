@@ -135,6 +135,11 @@ function menuMobile() {
 if (open == false) {
     document.getElementById("menu").style.animation = "show-menu 1s 1";
     document.getElementById("menu").style.animationFillMode = "forwards";
+
+
+    document.getElementById("menu").style.webkitAnimation = "blur-menu 1s 1";
+    document.getElementById("menu").style.animationFillMode = "forwards";
+
     open = true;
 }
 

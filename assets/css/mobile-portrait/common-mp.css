@@ -112,6 +112,7 @@ a:focus {outline: none}
  100% {left: 100%}
 }
 
+
 .headerbtn {
   text-align: center;
   width: 100%;
@@ -132,6 +133,8 @@ a:focus {outline: none}
   animation: menuhover 1s 1;
   animationFillMode: forwards;
 }
+
+
 
 @keyframes menuhover {
  0% {filter: blur(6px); -webkit-filter:blur(6px);}
@@ -165,4 +168,6 @@ opacity: 0.7}
 .foot, .footerlink {padding-bottom: 1vw;}
 
 
+
+/* HIDE FOOTER */
 #footer {display: none}
