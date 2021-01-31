@@ -324,3 +324,21 @@ border: none;
 #footer, #footer2{
   display: none;
 }
+
+
+
+
+/* MENU FOOTER */
+#mobile-footer {position: absolute;
+  left: var(--mobilemargin);
+  right: var(--mobilemargin);
+  bottom: 0;
+  margin-bottom: 41vh;
+  z-index: 1000;
+text-align: center;
+font-size: 3vw;
+opacity: 0.7}
+
+.footerlink {width: 7vw; padding-left: 1vw; padding-right: 1vw;}
+
+.foot, .footerlink {padding-bottom: 1vw;}
