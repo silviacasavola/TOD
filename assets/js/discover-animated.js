@@ -2,7 +2,7 @@ let gif;
 let gif2;
 let gif3;
 
-let frameNumber = 0;
+let frameNumber1 = 0;
 let frameNumber2 = 0;
 let frameNumber3 = 0;
 
@@ -33,19 +33,20 @@ image(gif, 0, 0, windowWidth, windowHeight);
   gif.pause();
 }
 
+
 function animateGif(event) {
 let maxFrame = gif.numFrames();
 
 let y = floor(constrain(event.deltaY, -1, 1));
 
-if (y>0 && frameNumber < maxFrame || y<0 && frameNumber > 0) {
-    frameNumber = frameNumber + y;
+if (y>0 && frameNumber1 < maxFrame || y<0 && frameNumber1 > 0) {
+    frameNumber1 = frameNumber1 + y;
     gif.play()
-    gif.setFrame(frameNumber);
+    gif.setFrame(frameNumber1);
   }
 else {
   gif.pause();
-  gif.setFrame(frameNumber);
+  gif.setFrame(frameNumber1);
 }
 }
 
