@@ -151,19 +151,7 @@ cursor: crosshair;
 /* SHOW CREDITS TEXT */
 
 #show-credits-text {
-  margin: auto;
-  color: blue;
-  padding: 1vw;
-  font-size: 3vw;
-
-  -webkit-animation: showCreditsDisappear 1s 1;
-  animation-fill-mode: forwards;
-  animation-play-state: paused;
- }
-
-@keyframes showCreditsDisappear {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  display: none;
 }
 
 
