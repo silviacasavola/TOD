@@ -30,6 +30,16 @@
    --font-size: 5.2vw;
 }
 
+#mamma-mia {
+-ms-touch-action: pan-y;
+touch-action: pan-y;
+}
+#mamma-mia {
+-ms-touch-action: none;
+touch-action: none;
+}
+
+
 /* FONT */
 @font-face {
     font-family: 'Whyte';

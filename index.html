@@ -22,6 +22,7 @@
     <script src="assets/js/p5.min.js"></script>
     <script src="assets/js/footer.js"></script>
     <script src="assets/js/home-animated.js"></script>
+    <script src="assets/js/home-mobile.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
 
@@ -92,6 +93,9 @@ col calore della memoria.</div>
 </div>
 </div>
 
+<img id="mobile-bookmarks" src="assets/img/mobile/home-bookmarks1.png" style="position: fixed; bottom: 7vh; left: 45vw; width: 10vw; opacity: 0.7">
+
+
 <!-- VIDEO -->
 <div id=video>
 <iframe id="myVideo" src="https://player.vimeo.com/video/493549915" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -145,6 +149,38 @@ else if (open == true) {
     open = false;
 }
 }
+
+// let first = false;
+// let second = false;
+
+
+// HOME MOBILE
+// window.onclick = function homeMobile(event) {
+// if (window.innerWidth < window.innerHeight) {
+//   if (first==false && second==false) {
+//   document.getElementById("claim-mobile").style.display = "none";
+//   document.getElementById("perdita").style.display = "block";
+//   first = true;
+//   second = false;
+//   }
+//
+//   if (first==true && second==false) {
+//   document.getElementById("perdita").style.display = "none";
+//   document.getElementById("affetto").style.display = "block";
+//   first = false;
+//   second = true;
+//   }
+//
+//
+//   if (second==true && first==false) {
+//   document.getElementById("perdita").style.display = "none";
+//   document.getElementById("claim-mobile").style.display = "block";
+//   first = false;
+//   second = false;
+//   }
+// }
+// }
+
 </script>
 
 </body>

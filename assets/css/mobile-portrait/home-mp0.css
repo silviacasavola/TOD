@@ -1,10 +1,22 @@
+@media only screen and (orientation:portrait) and (max-width:991px) {
+
+:root {
+  --mobile-margin: 5vw;
+}
+
+body {
+min-height: 100vh;
+max-height: 100vh;
+overflow: hidden;
+}
+
 /* CLAIM */
 
 #claim-mobile {
 display: block;
-position: absolute;
 width: 100%;
 height: 100%;
+position: fixed;
 z-index: 90;
 text-align: center;
 z-index: var(--content-layer);
@@ -39,56 +51,11 @@ transform:translate(0%, -60%);
  100% {opacity: 1}
 }
 
-
 /* PARAGRAPHS */
 
 #paragraphs {
-  position: absolute;
-  height: auto;
-  top: 100vh;
-  margin-top: 10vh;
-  color: #F7F7F7;
-  line-height: 1.2;
-  text-align: center;
+  display: none;
   }
-
-#perdita {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    display: none;
-  }
-
-#affetto {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-
-    display: none;
-    }
-
-.paragraph {
-left: 10vw;
-margin-right: 10vw;
-  position: absolute;
-  top: 50%;
-  transform:translate(0, -30%);
-  padding-bottom: 15vh;
-  font-size: 4vw;
-}
-
-.paragraph-title {
-  position: absolute;
-  width: 100%;
-font-size: var(--font-size);
-  line-height: 2;
-  top: 20vh;
-}
 
 /* FUOCO FATUO */
 #blob-mobile {
@@ -109,7 +76,7 @@ font-size: var(--font-size);
 
   @keyframes blob-mobile-appear {
    0% {opacity: 0; width: 2vh}
-   100% {opacity: 1; width: 300vw}
+   100% {opacity: 1; width: 270vw}
   }
 
 
