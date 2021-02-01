@@ -165,6 +165,16 @@ opacity: 0.7}
 
 .footerlink {width: 7vw; padding-left: 1vw; padding-right: 1vw;}
 
+#vimeo:hover {
+  content: url('../../img/mobile/vimeo-blue.png');
+  width: 7vw; padding-left: 1vw; padding-right: 1vw; padding-bottom: 1vw;
+}
+
+#insta:hover {
+  content: url('../../img/mobile/insta-blue.png');
+  width: 7vw; padding-left: 1vw; padding-right: 1vw; padding-bottom: 1vw;
+}
+
 .foot, .footerlink {padding-bottom: 1vw;}
 
 
