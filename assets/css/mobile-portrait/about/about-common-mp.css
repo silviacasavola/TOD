@@ -223,28 +223,42 @@ cursor: crosshair;
 
 
 #credits-paragraph {
+position: relative;
   top: 0;
   left: 0;
   right: 0;
   font-size: var(--font-size);
   color: white;
   z-index: var(--overlay-layer);
+  padding-bottom: 2em;
 }
 
 #credits-names-block {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40%;
+position:relative;
   line-height: 1.5;
   z-index: var(--overlay-layer);
+  padding-bottom: 2em;
+  /* border: solid; */
+  height: 5em;
 }
 
 .credits-names {
-  position: absolute;
   font-size: 3vw;
   color: white;
   display: inline-table;
+}
+
+
+#studs {
+  position: absolute;
+  left: 0;
+  bottom: 0%;
+}
+
+#uni {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
 }
 
 #studs-links {
@@ -257,27 +271,7 @@ background-color: white;
 color: var(--tod-blue);
 }
 
-#studs {
-  left: 69%;
-  bottom: 85%;
-}
-
-#profs {
-  /* left: 0%;
-  bottom:0%; */
-  display: none
-}
-
-#ass {
-  /* left: 69%;
-  bottom: 0%; */
-  display: none;
-}
-
-#uni {
-  left: 0%;
-  bottom: 85%;
-}
+#profs, #ass {display: none}
 
 
 
@@ -285,10 +279,9 @@ color: var(--tod-blue);
 
 /* VIDEO */
 #video2 {
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  padding-top: 25em;
   width: 100vw;
-  /* border: solid; */
   height: 30vh;
   padding-bottom: 0;
   z-index: var(--top-layer);
